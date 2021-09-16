@@ -136,7 +136,7 @@
                     <!-- Quik search -->
                     <div class="dlab-quik-search ">
                         <form action="#">
-                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type Your Keyword">
                             <span id="quik-search-remove"><i class="ti-close"></i></span>
                         </form>
                     </div>
@@ -158,7 +158,11 @@
 								<a href="javascript:;">The Company</i></a>
 								
 							</li>
-							<li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
+							<li>
+								<a href="javascript:;">Our Projects</i></a>
+								
+							</li>
+							{{-- <li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
 								<ul class="mega-menu">
 									<li><a href="{{url('/')}}"><img src="demo/pic1.jpg')}}" alt=""><span>Home - Default</span></a></li>
 									<li><a href="index-2.html"><img src="demo/pic2.jpg')}}" alt=""><span>Home - Oil/Gas Plant</span></a></li>
@@ -176,7 +180,7 @@
 									<li><a href="index-14.html"><img src="demo/pic14.jpg')}}" alt=""><span>Home - Car Industry</span></a></li>
 									<li><a href="index-15.html"><img src="demo/pic15.jpg')}}" alt=""><span>Home - Plastic Industry</span></a></li>
 								</ul>
-							</li>
+							</li> --}}
 
 							<li>
 								<a href="javascript:;">Services </a>

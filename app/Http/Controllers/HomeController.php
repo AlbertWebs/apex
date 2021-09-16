@@ -10,4 +10,10 @@ class HomeController extends Controller
     {
         return view('front.index');
     }
+    public function contact_us()
+    {
+        return view('front.contact-us');
+    }
+
+    
 }

@@ -725,7 +725,7 @@ var Industry = (function () {
                         });
                 })(),
                 jQuery("body").append(
-                    '<a href="https://1.envato.market/1d1Nm" target="_blank" class="bt-buy-now theme-btn"><i class="ti-shopping-cart"></i><span>Buy Now</span></a><a href="https://w3itexperts.ticksy.com" target="_blank" class="bt-support-now theme-btn"><i class="ti-headphone-alt"></i><span>Support</span></a>\x3c!-- Go to www.addthis.com/dashboard to customize your tools --\x3e<script type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b221c5e31b4e54b"></script>'
+                    '<a href="tel:254723014032" target="_blank" class="bt-support-now theme-btn"><i class="ti-headphone-alt"></i><span>Support</span></a>\x3c!-- Go to www.addthis.com/dashboard to customize your tools --\x3e<script type="text/javascript" src="../../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b221c5e31b4e54b"></script>'
                 );
         },
         resize: function () {

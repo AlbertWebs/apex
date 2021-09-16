@@ -77,7 +77,7 @@
                                     data-paddingbottom="[10,10,10,10]"
                                     data-paddingleft="[0,0,0,0]"
 
-                                    style="z-index: 6; white-space: nowrap;">OIL INDUSTRY  
+                                    style="z-index: 6; white-space: nowrap;">REAL ESTATE INDUSTRY  
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption BigBold-SubTitle  " 
@@ -216,7 +216,7 @@
                                     data-paddingbottom="[10,10,10,10]"
                                     data-paddingleft="[0,0,0,0]"
 
-                                    style="z-index: 11; white-space: nowrap;">GAS INDUSTRY  
+                                    style="z-index: 11; white-space: nowrap;">TRANSPORT INDUSTRY  
                                 </div>
                                 <!-- LAYER NR. 8 -->
                                 <div class="tp-caption BigBold-SubTitle  " 
