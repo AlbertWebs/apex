@@ -12,7 +12,7 @@
                     <div id="rev_slider_1077_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.0.2">
                         <ul>	
                             <!-- SLIDE  -->
-                            <li data-index="rs-3042" data-transition="slideoverhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="images/main-slider/slide4.jpg')}}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="OIL INDUSTRY" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <li data-index="rs-3042" data-transition="slideoverhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="images/main-slider/slide4.jpg')}}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="TRANSPORT INDUSTRY" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="{{asset('theme/images/main-slider/slide4.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 200" data-offsetend="0 -200" alt="" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer" 
@@ -77,7 +77,7 @@
                                     data-paddingbottom="[10,10,10,10]"
                                     data-paddingleft="[0,0,0,0]"
 
-                                    style="z-index: 6; white-space: nowrap;">REAL ESTATE INDUSTRY  
+                                    style="z-index: 6; white-space: nowrap;">TRANSPORT INDUSTRY  
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption BigBold-SubTitle  " 
@@ -151,7 +151,7 @@
                                 </div>
                             </li>
                             <!-- SLIDE  -->
-                            <li data-index="rs-3043" data-transition="slideoverhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="images/main-slider/slide5.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="GAS INDUSTRY " data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <li data-index="rs-3043" data-transition="slideoverhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="images/main-slider/slide5.jpg')}}"  data-rotate="0"  data-saveperformance="off"  data-title="REAL ESTATE  INDUSTRY " data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="{{asset('theme/images/main-slider/slide5.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-offsetstart="-500 0" data-offsetend="500 0" alt="" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer" 
@@ -216,7 +216,7 @@
                                     data-paddingbottom="[10,10,10,10]"
                                     data-paddingleft="[0,0,0,0]"
 
-                                    style="z-index: 11; white-space: nowrap;">TRANSPORT INDUSTRY  
+                                    style="z-index: 11; white-space: nowrap;">REAL ESTATE  INDUSTRY  
                                 </div>
                                 <!-- LAYER NR. 8 -->
                                 <div class="tp-caption BigBold-SubTitle  " 
@@ -310,8 +310,8 @@
                             <h2 class="title">We dig<br/>what you dream <br/><span class="text-primary">since 2014</span></h2>
                             <h4 class="title">Industrial engineering is a branch of engineering which deals with the optimization.</h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem Ipsum has been the Factory's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.</p>
-                            <a href="about-2.html" class="site-button btnhover20">About Us</a>
-                            <a download href="about-2.html" class="site-button black
+                            <a href="about-2.#" class="site-button btnhover20">About Us</a>
+                            <a download href="about-2.#" class="site-button black
                              btnhover20"><i class="ti-download"></i> Company Profile</a>
                         </div>
                     </div>
@@ -361,11 +361,11 @@
                             <ul class="list-details">
                                 <li>
                                     <strong>Clients:</strong>
-                                    <span>Ethan Hunt</span>
+                                    <span>Jogn Hunt</span>
                                 </li>
                                 <li>
                                     <strong>Completion:</strong>
-                                    <span>February 5th, 2017</span>
+                                    <span>February 5th, 2020</span>
                                 </li>
                                 <li>
                                     <strong>Project Type:</strong>
@@ -374,7 +374,7 @@
                             </ul>
                         </div>
                         <div class="">
-                            <a href="portfolio-details.html" class="site-button btnhover20">View Portfolio</a>
+                            <a href="portfolio-details.#" class="site-button btnhover20">View Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -382,6 +382,60 @@
         </div>
     </div>
 
+    {{--  --}}
+	<!-- Client logo -->
+    <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+        <div class="container">		
+            <div class="section-head text-black text-center">
+                <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br/><span class="text-primary">Join The Apex Team Today.</span></h2>
+            </div>
+            <div class="client-logo-carousel owl-loaded owl-theme owl-carousel owl-dots-none owl-btn-center-lr owl-btn-3">
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border">
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo2.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Client logo End -->
 
 </div>
 <!-- Content END -->
