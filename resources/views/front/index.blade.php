@@ -383,6 +383,153 @@
     </div>
 
     {{--  --}}
+    	<!-- Testimonials -->
+			<div class="section-full content-inner-2 bg-white wow fadeIn" style="background-image:url({{asset('theme/images/background/map-bg1.png')}})" data-wow-duration="2s" data-wow-delay="0.6s">
+				<div class="container">
+					<div class="section-head style2 text-center">
+						<h2 class="title">Clients Say About Us</h2>
+						<p>9+ years’ experience</p>
+					</div>
+					<div class="testimonial-num-count owl-num-count owl-carousel owl-btn-center-lr owl-btn-3 owl-theme">
+						<div class="item">
+							<div class="testimonial-12 text-white">
+								<div class="testimonial-pic">
+									<img src="{{asset('theme/images/our-team/pic12.jpg')}}" alt="">
+								</div>
+								<div class="testimonial-detail">
+									<h4 class="testimonial-name m-t0 m-b5">David Daudi</h4> 
+									<span class="testimonial-position">Architects</span> 
+									<div class="testimonial-text">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-12 text-white">
+								<div class="testimonial-pic">
+									<img src="{{asset('theme/images/our-team/pic13.jpg')}}" alt="">
+								</div>
+								<div class="testimonial-detail">
+									<h4 class="testimonial-name m-t0 m-b5">David Musa</h4> 
+									<span class="testimonial-position">Position here</span> 
+									<div class="testimonial-text">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-12 text-white">
+								<div class="testimonial-pic">
+									<img src="{{asset('theme/images/our-team/pic14.jpg')}}" alt="">
+								</div>
+								<div class="testimonial-detail">
+									<h4 class="testimonial-name m-t0 m-b5">John Kirimi</h4>
+									<span class="testimonial-position">Intern</span> 
+									<div class="testimonial-text">
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!-- Testimonials End -->
+	<!-- Testimonials End -->
+    <!-- Latest Blog -->
+    <div class="section-full content-inner bg-white">
+        <div class="container">
+            <div class="section-head text-black text-center">
+                <h2 class="title text-capitalize">latest news</h2>
+                <p>Intro goes here with some designekta Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="blog-post blog-grid blog-rounded blog-effect1 fly-box">
+                        <div class="dlab-post-media dlab-img-effect"> 
+                            <a href="#"><img src="{{asset('theme/images/blog/grid/pic1.jpg')}}" alt=""></a> 
+                        </div>
+                        <div class="dlab-info p-a20 border-1 bg-white">
+                            <div class="dlab-post-meta">
+                                <ul>
+                                    <li class="post-date"> <strong>10 Aug</strong> <span> 2021</span> </li>
+                                    <li class="post-author"> By <a href="javascript:void(0);">John</a> </li>
+                                </ul>
+                            </div>
+                            <div class="dlab-post-title">
+                                <h4 class="post-title"><a href="#">Seven Doubts You Should</a></h4>
+                            </div>
+                            <div class="dlab-post-text">
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
+                            </div>
+                            <div class="dlab-post-readmore"> 
+                                <a href="#" title="READ MORE" rel="bookmark" class="site-button btnhover16">READ MORE
+                                    <i class="ti-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                    <div class="blog-post blog-grid blog-rounded blog-effect1 fly-box">
+                        <div class="dlab-post-media dlab-img-effect"> 
+                            <a href="#"><img src="{{asset('theme/images/blog/grid/pic2.jpg')}}" alt=""></a> 
+                        </div>
+                        <div class="dlab-info p-a20 border-1 bg-white">
+                            <div class="dlab-post-meta ">
+                                <ul>
+                                    <li class="post-date"> <strong>11 Aug</strong> <span> 2021</span> </li>
+                                    <li class="post-author"> By <a href="javascript:void(0);">Kimrop</a> </li>
+                                </ul>
+                            </div>
+                            <div class="dlab-post-title">
+                                <h4 class="post-title"><a href="#">The Shocking Revelation</a></h4>
+                            </div>
+                            <div class="dlab-post-text">
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
+                            </div>
+                            <div class="dlab-post-readmore"> 
+                                <a href="#" title="READ MORE" rel="bookmark" class="site-button btnhover16">READ MORE
+                                    <i class="ti-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.9s">
+                    <div class="blog-post blog-grid blog-rounded blog-effect1 fly-box">
+                        <div class="dlab-post-media dlab-img-effect"> 
+                            <a href="#"><img src="{{asset('theme/images/blog/grid/pic3.jpg')}}" alt=""></a> 
+                        </div>
+                        <div class="dlab-info p-a20 border-1 bg-white">
+                            <div class="dlab-post-meta">
+                                <ul>
+                                    <li class="post-date"> <strong>12 Aug</strong> <span> 2021</span> </li>
+                                    <li class="post-author"> By <a href="javascript:void(0);">Albert</a> </li>
+                                </ul>
+                            </div>
+                            <div class="dlab-post-title">
+                                <h4 class="post-title"><a href="#">The Story Of Apex</a></h4>
+                            </div>
+                            <div class="dlab-post-text">
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true.</p>
+                            </div>
+                            <div class="dlab-post-readmore"> 
+                                <a href="#" title="READ MORE" rel="bookmark" class="site-button btnhover16">READ MORE
+                                    <i class="ti-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest Blog End -->
+    {{--  --}}
+    {{--  --}}
 	<!-- Client logo -->
     <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
         <div class="container">		
@@ -439,4 +586,128 @@
 
 </div>
 <!-- Content END -->
+
+
+<div class="section-full bg-white content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+    <div class="container">
+        <div class="section-head style2 text-center">
+            <h2 class="title m-b10">Design Projects</h2>
+            <p>There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="site-filters m-b20 filters2">
+                    <ul class="filters" data-toggle="buttons">
+                        <li data-filter="" class="btn active"><input type="radio"><a href="#"><i class="flaticon-worker"></i><span>Construction</span></a></li>
+                        <li data-filter="penthouse" class="btn"><input type="radio"><a href="#"><i class="flaticon-crane"></i><span>Architecture</span></a></li>
+                        <li data-filter="royal" class="btn"><input type="radio"><a href="#"><i class="flaticon-analytics"></i><span>Consulting</span></a></li>
+                        <li data-filter="standard" class="btn"><input type="radio"><a href="#"><i class="flaticon-optimization"></i><span>Mechanical</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row p-l0 sp10">
+            <div class="col-lg-12">
+                <ul id="masonry" class="dlab-gallery-listing gallery mfp-gallery text-center">
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 royal">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_2.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Building</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard penthouse">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_1.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Industry</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 royal">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_3.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Manufacturing</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 penthouse">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_4.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Building</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_5.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Industry</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard penthouse">
+                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
+                            <img src="{{asset('theme/images/portfolio/construct/image_6.jpg')}}" alt=""/>
+                            <div class="overlay-bx">
+                                <div class="portinner">
+                                    <div class="port-up">
+                                        <span class="text-primary">Manufacturing</span>
+                                        <h3 class="port-title"><a href="portfolio-details.html">Westwood Child Center</a></h3>
+                                    </div>
+                                    <div class="port-down">
+                                        <a href="portfolio-details.html" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

@@ -217,8 +217,31 @@
 
 	<!-- Footer -->
     <footer class="site-footer style2">
+		<!-- newsletter part -->
+        {{-- <div class="dlab-newsletter">
+            <div class="container">
+                <div class="ft-contact wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+					<div class="ft-contact-bx">
+						<img src="{{asset('theme/images/icon/icon1.png')}}" alt=""/>
+						<h4 class="title">Address</h4>
+						<p>Demo Address #8901 Marmora Road Chi Minh City, Somalia</p>
+					</div>
+					<div class="ft-contact-bx">
+						<img src="{{asset('theme/images/icon/icon2.png')}}" alt=""/>
+						<h4 class="title">Phone</h4>
+						<p>+254723014032 <br> +254723014032</p>
+					</div>
+					<div class="ft-contact-bx">
+						<img src="{{asset('theme/images/icon/icon3.png')}}" alt=""/>
+						<h4 class="title">Email Contact</h4>
+						<p>info@apexeng.com<br>info@apexeng.com</p>
+					</div>
+				</div>
+            </div>
+        </div> --}}
+        <!-- footer top part -->
 		<!-- Footer Info -->
-		<div class="section-full p-t50 p-b20 bg-primary text-white overlay-primary-dark footer-info-bar wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+		{{-- <div class="section-full p-t50 p-b20 bg-primary text-white overlay-primary-dark footer-info-bar wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
@@ -270,7 +293,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 		<!-- Footer Info End -->
         <!-- Footer Top -->
 		<div class="footer-top">
