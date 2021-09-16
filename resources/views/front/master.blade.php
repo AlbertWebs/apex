@@ -57,9 +57,9 @@
 				<div class="row d-flex justify-content-between align-items-center">
 					<div class="dlab-topbar-left">
 						<ul class="font-14">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Refund Policy</a></li>
-							<li><a href="#">Help Desk</a></li>
+							<li><a href="#">About Us &nbsp; <i class="fa fa-info"></i></a></li>
+							<li><a href="#">Privacy Policy &nbsp;<i class="fa fa-lock"></i></a></li>
+							<li><a href="#">Find Us &nbsp;<i class="fa fa-map-marker"></i></a></li>
 						</ul>
 					</div>
 					<div class="dlab-topbar-right">
@@ -260,9 +260,9 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="widget widget_about">
 							<div class="footer-logo logo-dark">
-								<a href="{{url('/')}}"><img src="{{asset('theme/images/logo.png')}}" alt=""/></a>
+								<a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""/></a>
 							</div>
-							<p>Industry Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make.</p>
+							<p>Apex Welcome Note Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make.</p>
 							<div class="widget widget_getintuch">
 								<ul>
 									<li><i class="ti-location-pin"></i> demo address #8901 Marmora Road Chi Minh City, Somalia </li>
@@ -395,7 +395,7 @@
  <script>
 	jQuery(document).ready(function() {
 	   'use strict';
-	   dz_rev_slider_1();	
+	   dz_rev_slider_4();	
 	   $('.lazy').Lazy();
 	});	/*ready*/
  </script>

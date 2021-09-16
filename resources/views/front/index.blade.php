@@ -3,6 +3,7 @@
   <!-- Content -->
   <div class="page-content bg-white">
     <!-- Slider -->
+    <!-- Slider -->
     <div class="main-slider style-two default-banner" id="home">
         <div class="tp-banner-container">
             <div class="tp-banner" >
@@ -296,87 +297,91 @@
             </div>        
         </div>        
     </div>        
+    <!-- Slider END -->     
     <!-- Slider END -->
-    <!-- contact area -->
-    <div class="content-block">
-        <!-- Content Section -->
-        <div class="section-full">
-            <div class="row spno about-industry">
-                <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-                    <div class="dlab-post-media dlab-img-effect zoom"> 
-                        <img src="{{asset('theme/images/our-work/oilgas/pic1.jpg')}}" alt="" class="img-cover">
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                    <div class="service-box style2">
-                        <div>
-                            <h2 class="title text-black"><span>Mechanical</span> <br/>Works</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="services-2.html" class="site-button outline outline-2 btnhover11">ABOUT US</a>
+      <!-- contact area -->
+      <div class="content-block">
+        <div class="section-full content-inner bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <div class="our-story">
+                            <span>OUR STORY</span>
+                            <h2 class="title">We dig<br/>what you dream <br/><span class="text-primary">since 2014</span></h2>
+                            <h4 class="title">Industrial engineering is a branch of engineering which deals with the optimization.</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem Ipsum has been the Factory's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting Factory.</p>
+                            <a href="about-2.html" class="site-button btnhover20">About Us</a>
+                            <a download href="about-2.html" class="site-button black m-b10 btnhover20"><i class="ti-download"></i> Company Profile</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-                    <div class="dlab-post-media dlab-img-effect zoom"> 
-                        <img src="{{asset('theme/images/our-work/oilgas/pic2.jpg')}}" alt="" class="img-cover">
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-secondry text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
-                    <div class="service-box style2">
-                        <div>
-                            <h2 class="title"><span>Power &  </span> <br/>Energy.</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-                    <div class="dlab-post-media dlab-img-effect zoom"> 
-                        <img src="{{asset('theme/images/our-work/oilgas/pic3.jpg')}}" alt="" class="img-cover">
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-primary text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                    <div class="service-box style2">
-                        <div>
-                            <h2 class="title"><span>Petroleum  </span> <br/>Refinery.</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-                    <div class="dlab-post-media dlab-img-effect zoom"> 
-                        <img src="{{asset('theme/images/our-work/oilgas/pic4.jpg')}}" alt="" class="img-cover">
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-primary text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
-                    <div class="service-box style2">
-                        <div>
-                            <h2 class="title text-black"><span>Oil & Gas  </span> <br/>Industry.</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-                    <div class="service-box style2">
-                        <div>
-                            <h2 class="title text-black"><span>Automative  </span> <br/>Manufacturing.</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <a href="services-2.html" class="site-button outline outline-2 btnhover11">ABOUT US</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                    <div class="dlab-post-media dlab-img-effect zoom"> 
-                        <img src="{{asset('theme/images/our-work/oilgas/pic5.jpg')}}" alt="" class="img-cover">
+                    <div class="col-lg-6 col-md-12 m-b30 our-story-thum wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <img src="{{asset('theme/images/about/pic13.jpg')}}" class="radius-sm" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Content Section End -->
     </div>
     <!-- contact area END -->
+    {{--  --}}
+  <!-- contact area -->
+
+    
+    <!-- About Us -->
+    <div class="section-full bg-white content-inner-2 project-slider" style="background-image:url({{asset('theme/images/background/bg11.jpg')}}); background-repeat:no-repeat; background-position:right bottom;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 p-lr0">
+                    <div class="project-carousel-2 owl-carousel owl-btn-center-lr owl-btn-1 black  wow fadeInLeft" data-wow-delay="0.2s"  data-wow-duration="2s">
+                        <div class="item">
+                            <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
+                                <img src="{{asset('theme/images/portfolio/construct/image_1.jpg')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
+                                <img src="{{asset('theme/images/portfolio/construct/image_2.jpg')}}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
+                                <img src="{{asset('theme/images/portfolio/construct/image_3.jpg')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-content wow fadeIn" data-wow-delay="0.2s"  data-wow-duration="2s">
+                        <div class="section-head style2">
+                            <h2 class="title">Our Latest Project <br/>Style Apartment</h2>
+                            <p>Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus malesuada </p>
+                        </div>
+                        <div class="m-b30">
+                            <ul class="list-details">
+                                <li>
+                                    <strong>Clients:</strong>
+                                    <span>Ethan Hunt</span>
+                                </li>
+                                <li>
+                                    <strong>Completion:</strong>
+                                    <span>February 5th, 2017</span>
+                                </li>
+                                <li>
+                                    <strong>Project Type:</strong>
+                                    <span>Villa, Residence</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <a href="portfolio-details.html" class="site-button btnhover20">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 <!-- Content END -->
 @endsection
