@@ -323,8 +323,70 @@
         </div>
     </div>
     <!-- contact area END -->
-    {{--  --}}
-  <!-- contact area -->
+ <!-- contact area -->
+ <div class="content-block">
+    <!-- Content Section -->
+    <div class="section-full">
+        <div class="row spno about-industry">
+            
+            <div class="col-lg-3 bg-primary text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                <div class="service-box style2">
+                    <div>
+                        <h2 class="title">Vision</h2>
+                        <p>To provide quality services through loyal relationships, clear communication and creative solutions within our unique work environment while achieving personal and community growth.</p>
+                        {{-- <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 bg-secondr  text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
+                <div class="service-box style2">
+                    <div>
+                        <h2 class="title">Core Values.</h2>
+                        <div class="et_pb_toggle_content clearfix" style="display: block;">
+                            We are committed to the sustainability of the communities, our clients businesses and the environments in which we live and work:<p></p>
+                            <ul>
+                            <li>Efficiency- We assists our clients in developing appropriate and sustainable solutions that achieve outcomes and maximize performance.</li>
+                            <li>Collaboration- We work as a team in partnership with our clients, government agencies and other stakeholders</li>
+                            <li>Accountability – We uphold the highest ethical standards and model the processes we recommend.</li>
+                            <li>A Learning Organization – We value feedback, seek and evaluate data about our own performance, adjust and adapt to changing circumstances. We listen to and learn from our customers and the community and reflect this learning in our work.</li>
+                            <li>Do No Social and Environmental Harm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 bg-primary text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                <div class="service-box style2">
+                    <div>
+                        <h2 class="title">Mission.</h2>
+                        <p>To be the recognized leader in creating desirable communities, while leaving a legacy of excellence.</p>
+                        <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+       
+            
+            {{-- <div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                <div class="service-box style2">
+                    <div>
+                        <h2 class="title text-black"><span>Automative  </span> <br/>Manufacturing.</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="services-2.html" class="site-button outline outline-2 btnhover11">ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                <div class="dlab-post-media dlab-img-effect zoom"> 
+                    <img src="{{asset('theme/images/our-work/oilgas/pic5.jpg')}}" alt="" class="img-cover">
+                </div>
+            </div> --}}
+        </div>
+    </div>
+    <!-- Content Section End -->
+</div>
+<!-- contact area END -->
+
+
 
     
     <!-- About Us -->
@@ -401,8 +463,8 @@
                                 </div>
                                 <div class="icon-content">
                                     <div class="dlab-separator bg-primary"></div>
-                                    <h2 class="dlab-tilte counter">1226</h2>
-                                    <p>Happy Client</p>
+                                    <h2 class="dlab-tilte counter">126</h2>
+                                    <p>Active Experts</p>
                                 </div>
                             </div>
                         </div>
@@ -413,8 +475,8 @@
                                 </div>
                                 <div class="icon-content">
                                     <div class="dlab-separator bg-primary"></div>
-                                    <h2 class="dlab-tilte counter">1552</h2>
-                                    <p>Workers Hand</p>
+                                    <h2 class="dlab-tilte counter">552</h2>
+                                    <p>Equipments</p>
                                 </div>
                             </div>
                         </div>
@@ -425,8 +487,8 @@
                                 </div>
                                 <div class="icon-content">
                                     <div class="dlab-separator bg-primary"></div>
-                                    <h2 class="dlab-tilte counter">1156</h2>
-                                    <p>Active Experts</p>
+                                    <h2 class="dlab-tilte counter">35</h2>
+                                    <p>Completed Projects</p>
                                 </div>
                             </div>
                         </div>
@@ -631,8 +693,127 @@
         </div>
     </div>
     {{-- Milestones --}}
+    <div class="section-full bg-white content-inner-2" style="background-image:url({{asset('theme/images/background/bg11.jpg')}}); background-repeat:no-repeat; background-position:right center;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 m-b30 our-story-thum wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <img style="max-width:500px; border:2px solid #9a9a9a;" src="{{asset('uploads/somalia.png')}}" class="radius-sm" alt="">
+                </div>
 
+                <div class="col-lg-8 col-md-6">
+                    <div class="about-content wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <div class="section-head style2">
+                            <h2 class="title">Our Project Areas</h2>
+                            <p class="m-b10">Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus malesuada </p>
+                            <p class="m-b10">Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus malesuada </p>
+                        </div>
+                        
+                        <div class="">
+                            <a href="portfolio-details.#" class="site-button btnhover20">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     {{--  --}}
+    {{-- Call To Action --}}
+	<!-- Client logo -->
+    <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s" style="background-image:url({{asset('theme/images/background/bg-video.png')}}); background-repeat:no-repeat; background-position:right bottom;">
+        <div class="container">		
+            <div class="section-head text-black text-center">
+                <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br/><span class="text-primary">Our Partners</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border">
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo2.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+                    <div class="ow-client-logo">
+                        <div class="client-logo border"> 
+                            <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Client logo End -->
+    {{-- Call To action --}}
     <!-- Latest Blog -->
     <div class="section-full content-inner bg-white">
         <div class="container">
@@ -729,7 +910,7 @@
     <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
         <div class="container">		
             <div class="section-head text-black text-center">
-                <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br/><span class="text-primary">Join The Apex Team Today.</span></h2>
+                <h2 class="title text-capitalize">We work with our clients to provide project perfection,<br/><span class="text-primary">Our Clients</span></h2>
             </div>
             <div class="client-logo-carousel owl-loaded owl-theme owl-carousel owl-dots-none owl-btn-center-lr owl-btn-3">
                 <div class="item">

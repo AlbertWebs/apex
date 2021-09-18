@@ -11,3 +11,7 @@ body,html{-moz-osx-font-smoothing:grayscale}body{background-color:#fff;font-fami
         display:none;
     }
 }
+
+.clients.item{
+    float:left !important;
+}
