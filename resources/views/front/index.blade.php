@@ -381,6 +381,62 @@
             </div>
         </div>
     </div>
+    {{--  --}}
+    <!-- Company staus -->
+    <div class="section-full text-white bg-img-fix content-inner overlay-black-dark counter-staus-box" style="background-image:url({{asset('theme/images/background/bg4.jpg')}});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <div class="section-head text-white">
+                        <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube video play-btn"><span><i class="fa fa-play"></i></span>Play Now</a>
+                        <h2 class="title">We're thriving and building better structures</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="row sp20">
+                        <div class="col-md-4 col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                            <div class="icon-bx-wraper center counter-style-5">
+                                <div class="icon-xl m-b20">
+                                    <span class="icon-cell"><i class="flaticon-worker"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <div class="dlab-separator bg-primary"></div>
+                                    <h2 class="dlab-tilte counter">1226</h2>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                            <div class="icon-bx-wraper center counter-style-5">
+                                <div class="icon-xl m-b20">
+                                    <span class="icon-cell"><i class="flaticon-settings"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <div class="dlab-separator bg-primary"></div>
+                                    <h2 class="dlab-tilte counter">1552</h2>
+                                    <p>Workers Hand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                            <div class="icon-bx-wraper center counter-style-5">
+                                <div class="icon-xl m-b20">
+                                    <span class="icon-cell"><i class="flaticon-conveyor-1"></i></span>
+                                </div>
+                                <div class="icon-content">
+                                    <div class="dlab-separator bg-primary"></div>
+                                    <h2 class="dlab-tilte counter">1156</h2>
+                                    <p>Active Experts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Company staus End -->
+    {{--  --}}
 
     {{--  --}}
     	<!-- Testimonials -->
@@ -438,6 +494,20 @@
             </div>
 			<!-- Testimonials End -->
 	<!-- Testimonials End -->
+    {{-- Call To Action --}}
+<!-- Service Info Head -->
+<div class="section-full content-inner-2 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" style="background-image:url(images/background/map-bg.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center service-info">
+                <h2 class="title text-white">Amazing things happen to your project when we connect those dots of utility and value.</h2>
+                <p>Some Dummy text goes here lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Info Head End -->
+    {{-- Call To Action --}}
     <div class="section-full bg-gray content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
         <div class="container">
             <div class="section-head style2 text-center">
@@ -560,6 +630,9 @@
             </div>
         </div>
     </div>
+    {{-- Milestones --}}
+
+    {{--  --}}
     <!-- Latest Blog -->
     <div class="section-full content-inner bg-white">
         <div class="container">
