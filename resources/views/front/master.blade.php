@@ -100,7 +100,7 @@
 							<li>
 								<i class="la la-clock-o"></i>
 								<h4 class="title">08:00 AM - 06:00 PM</h4>
-								<span>Monday - Friday</span>
+								<span>Sunday - Thursday</span>
 							</li>
 							<li>
 								<i class="la la-map"></i>
