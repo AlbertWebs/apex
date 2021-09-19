@@ -37,17 +37,17 @@
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
-                                    <div class="icon-bx-xs border-1"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-email"></i></a> </div>
+                                    <div class="icon-bx-xs border-1"> <a href="mailto:info@apexeng.com" class="icon-cell"><i class="ti-email"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-tb0 dlab-tilte">Email:</h6>
-                                        <p>Info@Apexeng.Com</p>
+                                        <p>info@apexeng.com</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left">
-                                    <div class="icon-bx-xs border-1"> <a href="javascript:void(0);" class="icon-cell"><i class="ti-mobile"></i></a> </div>
+                                    <div class="icon-bx-xs border-1"> <a href="tel:+254723014032" class="icon-cell"><i class="ti-mobile"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-tb0 dlab-tilte">PHONE</h6>
-                                        <p>+254723014032</p>
+                                        <p>+254723014032<br>+254723014032</p>
                                     </div>
                                 </li>
                             </ul>
@@ -56,8 +56,8 @@
 									<li><a href="javascript:void(0);" class="fa fa-facebook bg-primary"></a></li>
 									<li><a href="javascript:void(0);" class="fa fa-twitter bg-primary"></a></li>
 									<li><a href="javascript:void(0);" class="fa fa-linkedin bg-primary"></a></li>
-									<li><a href="javascript:void(0);" class="fa fa-pinterest-p bg-primary"></a></li>
-									<li><a href="javascript:void(0);" class="fa fa-google-plus bg-primary"></a></li>
+									<li><a href="javascript:void(0);" class="fa fa-instagram bg-primary"></a></li>
+									<li><a href="javascript:void(0);" class="fa fa-youtube bg-primary"></a></li>
 								</ul>
 							</div>
                         </div>
@@ -75,6 +75,13 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <input name="dzName" type="text" required class="form-control" placeholder="Your Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <div class="input-group"> 
+											    <input name="dzEmail" type="email" class="form-control" required  placeholder="Your Email Id" >
                                             </div>
                                         </div>
                                     </div>
@@ -110,13 +117,14 @@
                     <!-- Left part END -->
 					<div class="col-lg-4 d-flex m-b30">
 						{{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" class="align-self-stretch radius-sm" style="border:0; width:100%; min-height:100%;" allowfullscreen></iframe> --}}
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.277444357953!2d36.8222756!3d-1.2821653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1631791892779!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.277444357953!2d36.8222756!3d-1.2821653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1631791892779!5m2!1sen!2ske" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
                     
                 </div>
             </div>
         </div>
         <!-- contact area  END -->
+        @include('front.home.call-to-action-one')
     </div>
     <!-- Content END-->
 @endsection

@@ -147,19 +147,19 @@
 						</div>
                         <ul class="nav navbar-nav">	
 							<li>
-								<a href="javascript:;">Home <i style="font-size: 18px;" class="la la-home"></i> </a>
+								<a href="{{url('/')}}">Home <i style="font-size: 18px;" class="la la-home"></i> </a>
 								
 							</li>
 							<li>
-								<a href="javascript:;">About Us </a>
+								<a href="{{url('/')}}/about-us">About Us <i style="font-size: 18px;" class="la la-info"></i> </a>
 								
 							</li>
 							<li>
-								<a href="javascript:;">The Company</i></a>
+								<a href="{{url('/')}}/the-company">The Company </a>
 								
 							</li>
 							<li>
-								<a href="javascript:;">Our Projects</i></a>
+								<a href="javascript:;">Our Projects</a>
 								
 							</li>
 							{{-- <li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
@@ -193,7 +193,7 @@
 							</li>
 						
 							<li>
-								<a href="javascript:;">Contact Us &nbsp; <i style="font-size: 18px;" class="la la-phone"></i></a>
+								<a href="{{url('/')}}/contact-us">Contact Us &nbsp; <i style="font-size: 18px;" class="la la-phone"></i></a>
 								
 							</li>
 						</ul>	
