@@ -32,7 +32,7 @@
             </div>
             <div class="col-lg-3 bg-primary text-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
                 <div class="service-box style2">
-                    <div>
+                    <div style="padding-bottom:80px;">
                         <h2 class="title">Mission.</h2>
                         <p>To be the recognized leader in creating desirable communities, while leaving a legacy of excellence.</p>
                         <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>

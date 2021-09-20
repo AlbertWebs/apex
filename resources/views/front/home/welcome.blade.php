@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <div class="our-story">
+                        <div class="our-story" style="padding-bottom:80px;">
                             <span>OUR STORY</span>
                             <h2 class="title">We dig<br/>what you dream <br/><span class="text-primary">since 2014</span></h2>
                             <h4 class="title">Industrial engineering is a branch of engineering which deals with the optimization.</h4>

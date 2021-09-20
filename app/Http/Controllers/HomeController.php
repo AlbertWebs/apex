@@ -23,6 +23,20 @@ class HomeController extends Controller
     {
         return view('front.company');
     }
+    public function services()
+    {
+        return view('front.services');
+    }
+    public function services_single()
+    {
+        return view('front.service');
+    }
+    public function portfolios()
+    {
+        return view('front.portfolios');
+    }
+    
+    
 
     
     

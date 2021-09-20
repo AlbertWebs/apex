@@ -159,7 +159,7 @@
 								
 							</li>
 							<li>
-								<a href="javascript:;">Our Projects</a>
+								<a href="{{url('/')}}/portfolios">Our Projects</a>
 								
 							</li>
 							{{-- <li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
@@ -183,7 +183,7 @@
 							</li> --}}
 
 							<li>
-								<a href="javascript:;">Services </a>
+								<a href="{{url('/')}}/services">Services </a>
 								
 							</li>
 
