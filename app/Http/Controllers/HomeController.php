@@ -35,11 +35,31 @@ class HomeController extends Controller
     {
         return view('front.portfolios');
     }
-    
+    public function portfolios_single()
+    {
+        return view('front.portfolio');
+    }
+    public function latest_news()
+    {
+        return view('front.latest-news');
+    }
+
+    public function terms_and_conditions()
+    {
+        return view('front.terms-and-conditions');
+    }
+    public function privacy_policy()
+    {
+        return view('front.privacy-policy');
+    }
+    public function copyright()
+    {
+        return view('front.copyright');
+    }
     
 
     
-    
 
+    
     
 }

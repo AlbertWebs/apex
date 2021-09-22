@@ -188,7 +188,7 @@
 							</li>
 
 							<li>
-								<a href="javascript:;">Latest News </a>
+								<a href="{{url('/')}}/latest-news">Latest News </a>
 								
 							</li>
 						
@@ -325,19 +325,21 @@
                         <div class="widget">
                             <h4 class="footer-title">Usefull Link</h4>
                             <ul class="list-2">
-                                <li><a href="about-1.html">About Us</a></li>
-                                <li><a href="blog-grid-2.html">Blog</a></li>
-                                <li><a href="services-1.html">Services</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="portfolio-details.html">Projects </a></li>
-                                <li><a href="help-desk.html">Help Desk </a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="contact-1.html">Contact</a></li>
+                                <li><a href="{{url('/')}}/about-us">About Us</a></li>
+                                <li><a href="{{url('/')}}/latest-news">Blog</a></li>
+                                <li><a href="{{url('/')}}/services">Services</a></li>
+                                <li><a href="{{url('/')}}/portfolios">Projects </a></li>
+                                <li><a href="{{url('/')}}/contact-us">Help Desk </a></li>
+                                <li><a href="{{url('/')}}/the-company">The Company</a></li>
+                                <li><a href="{{url('/')}}/contact-us">Contact</a></li>
+								<li><a href="{{url('/')}}/terms-and-conditions">Terms & Conditions</a></li>
+								<li><a href="{{url('/')}}/copyright">Copyright</a></li>
+								<li><a href="{{url('/')}}/privacy-policy">Privacy Policy</a></li>
                             </ul>							
                         </div>
 						<div class="widget">
                             <h4 class="footer-title mb-2">Newsletter</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p>Sign Up To Get Updates on new articles done by Apex Engineering Limited</p>
 							<div class="subscribe-form m-b20 m-t30">
 								<form class="dzSubscribe" action="https://industry.dexignzone.com/xhtml/script/mailchamp.php" method="post">
 									<div class="dzSubscribeMsg"></div>

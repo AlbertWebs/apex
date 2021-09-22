@@ -35,7 +35,7 @@
            
                 {{--  --}}
                 <div class="content-block">
-                    <div class="section-full bg-gray content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+                    <div class="section-full bg-white content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
                         <div class="container">
                             <div class="section-head style2 text-center">
                                 <h2 class="title m-b10">Design Projects</h2>
