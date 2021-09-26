@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php $SiteSettings = DB::table('_site_settings')->get(); ?>
+@foreach ($SiteSettings as $Settings)
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="robots" content="" />
-	<meta name="description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:title" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:description" content="Industry - Factory & Industrial HTML Template" />
-	<meta property="og:image" content="" />
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- FAVICONS ICON -->
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png')}}" />
-	
-	<!-- PAGE TITLE HERE -->
-	<title>Apex Engineering - Factory & Industrial  | Designekta</title>
-	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta name="keywords" content="" />
+	<meta name="author" content="Designekta Studios" />
+	<meta name="robots" content="" />
+	<meta name="format-detection" content="telephone=no">
+    <!--Meta SEO-->
+	{!! SEO::generate() !!}
+	<!-- FAVICONS ICON -->
+	@include('favicon')
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
@@ -48,17 +40,9 @@
 
 	{{--  --}}
 	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-		s1.async=true;
-		s1.src='https://embed.tawk.to/6143138825797d7a89ff4524/1ffn08k00';
-		s1.charset='UTF-8';
-		s1.setAttribute('crossorigin','*');
-		s0.parentNode.insertBefore(s1,s0);
-		})();
-	</script>
+
+	 {!! html_entity_decode($Settings->tawkTo, ENT_QUOTES, 'UTF-8') !!}
+	
 	<!--End of Tawk.to Script-->
 	{{--  --}}
 </head>
@@ -88,13 +72,13 @@
 				<!-- website logo  -->
 				<div class="middle-area">
 					<div class="logo-header logo-dark">
-						<a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""></a>
+						<a href="{{url('/')}}"><img src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt=""></a>
 					</div>
 					<div class="service-list">
 						<ul>
 							<li>
 								<i class="la la-phone"></i>
-								<h4 class="title">(+000)072.301.4032</h4>
+								<h4 class="title">{{$Settings->mobile_one}}</h4>
 								<span>24Hours</span>
 							</li>
 							<li>
@@ -304,12 +288,12 @@
 							<div class="footer-logo logo-dark">
 								<a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""/></a>
 							</div>
-							<p>Apex Welcome Note Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make.</p>
+							<p>Apex Engineering Limited</p>
 							<div class="widget widget_getintuch">
 								<ul>
-									<li><i class="ti-location-pin"></i> demo address #8901 Marmora Road Chi Minh City, Somalia </li>
-									<li><i class="ti-mobile"></i> 0800-123456 (24/7 Support Line)</li>
-									<li><i class="ti-email"></i> info@apexeng.com</li>
+									<li><i class="ti-location-pin"></i> {{$Settings->location}}<hr>{{$Settings->address}} <hr></li>
+									<li><i class="ti-mobile"></i> {{$Settings->mobile_one}} (24/7 Support Line)</li>
+									<li><i class="ti-email"></i> {{$Settings->email}}</li>
 								</ul>
 							</div>
 							<ul class="list-inline m-a0">
@@ -341,10 +325,11 @@
                             <h4 class="footer-title mb-2">Newsletter</h4>
 							<p>Sign Up To Get Updates on new articles done by Apex Engineering Limited</p>
 							<div class="subscribe-form m-b20 m-t30">
-								<form class="dzSubscribe" action="https://industry.dexignzone.com/xhtml/script/mailchamp.php" method="post">
-									<div class="dzSubscribeMsg"></div>
+								<form class="dzSubscribe" action="{{url('/news-letters')}}" method="post">
+									{{csrf_field()}}
+									<div style="color:#000000" class="dzSubscribeMsg"></div>
 									<div class="input-group">
-										<input name="dzEmail" required="required" class="form-control radius-no" placeholder="Your Email Address" type="email">
+										<input name="user_email" required="required" class="form-control radius-no" placeholder="Your Email Address" type="email">
 										<span class="input-group-btn">
 											<button name="submit" value="Submit" type="submit" class="site-button radius-no">SEND</button>
 										</span> 
@@ -357,54 +342,34 @@
                         <div class="widget recent-posts-entry">
                             <h4 class="footer-title">Recent Post</h4>
 							<div class="widget-post-bx">
+								<?php $Blogs = DB::table('blogs')->orderBy('id','DESC')->limit('3')->get(); ?>
+								@foreach($Blogs as $blog)
 								<div class="widget-post clearfix">
 									<div class="dlab-post-media"> 
-										<img src="{{asset('theme/images/blog/recent-blog/pic1.jpg')}}" width="200" height="143" alt=""> 
+										<img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" width="200" height="143" alt=""> 
 									</div>
 									<div class="dlab-post-info">
 										<div class="dlab-post-meta">
+											<?php 
+                                                    $RawDate = $blog->created_at;
+                                                    $FormatDate = strtotime($RawDate);
+                                                    $Month = date('M',$FormatDate);
+                                                    $Date = date('D',$FormatDate);
+                                                    $date = date('d',$FormatDate);
+                                                    $Year = date('Y',$FormatDate);
+                                                ?>
+                                              
 											<ul>
-												<li class="post-date"> <strong>13 Aug</strong> </li>
-												<li class="post-author"> By <a href="javascript:void(0);">Mohamed </a> </li>
+												<li class="post-date"> <strong>{{$date}} {{$Month}}</strong> </li>
+												<li class="post-author"> By <a href="javascript:void(0);">{{$blog->author}} </a> </li>
 											</ul>
 										</div>
 										<div class="dlab-post-header">
-											<h6 class="post-title"><a href="blog-single-left-sidebar.html">How To Get People To Like Industry</a></h6>
+											<h6 class="post-title"><a href="{{$blog->link}}">{{$blog->title}}</a></h6>
 										</div>
 									</div>
 								</div>
-								<div class="widget-post clearfix">
-									<div class="dlab-post-media"> 
-										<img src="{{asset('theme/images/blog/recent-blog/pic2.jpg')}}" width="200" height="160" alt=""> 
-									</div>
-									<div class="dlab-post-info">
-										<div class="dlab-post-meta">
-											<ul>
-												<li class="post-date"> <strong>13 Aug</strong> </li>
-												<li class="post-author"> By <a href="javascript:void(0);">Mohamed </a> </li>
-											</ul>
-										</div>
-										<div class="dlab-post-header">
-											<h6 class="post-title"><a href="blog-single-left-sidebar.html">Seven Doubts You Should Clarify About</a></h6>
-										</div>
-									</div>
-								</div>
-								<div class="widget-post clearfix">
-									<div class="dlab-post-media"> 
-										<img src="{{asset('theme/images/blog/recent-blog/pic3.jpg')}}" width="200" height="160" alt=""> 
-									</div>
-									<div class="dlab-post-info">
-										<div class="dlab-post-meta">
-											<ul>
-												<li class="post-date"> <strong>13 Aug</strong> </li>
-												<li class="post-author"> By <a href="javascript:void(0);">Mohamed </a> </li>
-											</ul>
-										</div>
-										<div class="dlab-post-header">
-											<h6 class="post-title"><a href="blog-single-left-sidebar.html">Why You Should Not Go To Industry</a></h6>
-										</div>
-									</div>
-								</div>
+								@endforeach
 							</div>
                         </div>
                     </div>
@@ -444,5 +409,5 @@
 	});	/*ready*/
  </script>
 </body>
-
+@endforeach
 </html>

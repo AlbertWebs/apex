@@ -29,6 +29,7 @@ Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class,
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy_policy'])->name('privacy-policy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 
+Route::post('/news-letters', [App\Http\Controllers\HomeController::class, 'news_letters'])->name('news-letters');
 
 Auth::routes();
 

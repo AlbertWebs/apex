@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
                 <div class="section-head text-white">
-                    <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube video play-btn"><span><i class="fa fa-play"></i></span>Play Now</a>
+                    <a href="https://www.youtube.com/watch?v=ugaKM3sMPC4" class="popup-youtube video play-btn"><span><i class="fa fa-play"></i></span>Play Now</a>
                     <h2 class="title">We're thriving and building better structures</h2>
                 </div>
             </div>

@@ -1,4 +1,8 @@
  <!-- contact area -->
+ <?php  $Content = DB::table('abouts')->get(); ?>
+ @foreach ($Content as $item)
+     
+
  <div class="content-block">
     <!-- Content Section -->
     <div class="section-full">
@@ -8,7 +12,7 @@
                 <div class="service-box style2">
                     <div>
                         <h2 class="title">Vision</h2>
-                        <p>To provide quality services through loyal relationships, clear communication and creative solutions within our unique work environment while achieving personal and community growth.</p>
+                        <p> {!! html_entity_decode($item->vision, ENT_QUOTES, 'UTF-8') !!}</p>
                         {{-- <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a> --}}
                     </div>
                 </div>
@@ -19,13 +23,7 @@
                         <h2 class="title">Core Values.</h2>
                         <div class="et_pb_toggle_content clearfix" style="display: block;">
                             We are committed to the sustainability of the communities, our clients businesses and the environments in which we live and work:<p></p>
-                            <ul>
-                            <li>Efficiency- We assists our clients in developing appropriate and sustainable solutions that achieve outcomes and maximize performance.</li>
-                            <li>Collaboration- We work as a team in partnership with our clients, government agencies and other stakeholders</li>
-                            <li>Accountability – We uphold the highest ethical standards and model the processes we recommend.</li>
-                            <li>A Learning Organization – We value feedback, seek and evaluate data about our own performance, adjust and adapt to changing circumstances. We listen to and learn from our customers and the community and reflect this learning in our work.</li>
-                            <li>Do No Social and Environmental Harm</li>
-                            </ul>
+                            {!! html_entity_decode($item->values, ENT_QUOTES, 'UTF-8') !!}
                         </div>
                     </div>
                 </div>
@@ -34,7 +32,7 @@
                 <div class="service-box style2">
                     <div style="padding-bottom:80px;">
                         <h2 class="title">Mission.</h2>
-                        <p>To be the recognized leader in creating desirable communities, while leaving a legacy of excellence.</p>
+                        <p> {!! html_entity_decode($item->mission, ENT_QUOTES, 'UTF-8') !!}</p>
                         <a href="services-2.html" class="site-button outline white outline-2 btnhover11">ABOUT US</a>
                     </div>
                 </div>
@@ -60,3 +58,4 @@
     <!-- Content Section End -->
 </div>
 <!-- contact area END -->
+@endforeach
