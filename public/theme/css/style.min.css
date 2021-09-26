@@ -10,6 +10,9 @@ body,html{-moz-osx-font-smoothing:grayscale}body{background-color:#fff;font-fami
     {
         display:none;
     }
+    .theme-btn.bt-support-now{
+        bottom:10px;
+    }
 }
 
 .clients.item{
