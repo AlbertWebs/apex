@@ -35,60 +35,45 @@
                 <!-- Services -->
                 <div class="section-full">
                     <div class="row spno about-industry">
-
+                        <?php
+                            $order = 1; 
+                        ?>
+                        @foreach ($Content as $content)
+                        @if ($order % 2 == 0)
                         <div class="col-lg-6">
-                            <img src="{{asset('theme/images/our-work/oilgas/pic1.jpg')}}" alt="" class="img-cover">
+                            <img src="{{url('/')}}/uploads/categories/{{$content->image}}" alt="" class="img-cover">
                         </div>
                         <div class="col-lg-6 bg-white">
                             <div class="service-box style2">
                                 <div>
-                                    <h2 class="title text-black"><span>Mechanical</span> <br/>Works</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                    <a href="{{url('/')}}/services/single" class="site-button outline outline-2">Read More</a>
+                                    <h2 class="title text-black">{!! html_entity_decode($content->title, ENT_QUOTES, 'UTF-8') !!}</h2>
+                                    <p> {!! html_entity_decode($content->meta, ENT_QUOTES, 'UTF-8') !!}</p>
+                                    <a href="{{url('/')}}/services/{{$content->slung}}" class="site-button outline outline-2">Read More</a>
                                 </div>
                             </div>
                         </div>
-
-
+                        @else
                         <div class="col-lg-6 bg-gray">
                             <div class="service-box style2">
                                 <div>
-                                    <h2 class="title text-black"><span>Mechanical</span> <br/>Works</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                    <a href="{{url('/')}}/services/single" class="site-button outline outline-2">Read More</a>
+                                    <h2 class="title text-black">	 {!! html_entity_decode($content->title, ENT_QUOTES, 'UTF-8') !!}</h2>
+                                    <p> {!! html_entity_decode($content->meta, ENT_QUOTES, 'UTF-8') !!}</p>
+                                    <a href="{{url('/')}}/services/{{$content->slung}}" class="site-button outline outline-2">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <img src="{{asset('theme/images/our-work/oilgas/pic1.jpg')}}" alt="" class="img-cover">
+                            <img src="{{url('/')}}/uploads/categories/{{$content->image}}" alt="" class="img-cover">
                         </div>
+                        @endif
+                        <?php $order =  $order+1; ?>
+                        @endforeach
+                       
 
-                        <div class="col-lg-6">
-                            <img src="{{asset('theme/images/our-work/oilgas/pic1.jpg')}}" alt="" class="img-cover">
-                        </div>
-                        <div class="col-lg-6 bg-white">
-                            <div class="service-box style2">
-                                <div>
-                                    <h2 class="title text-black"><span>Mechanical</span> <br/>Works</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                    <a href="{{url('/')}}/services/single" class="site-button outline outline-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 bg-gray">
-                            <div class="service-box style2">
-                                <div>
-                                    <h2 class="title text-black"><span>Mechanical</span> <br/>Works</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                    <a href="{{url('/')}}/services/single" class="site-button outline outline-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{asset('theme/images/our-work/oilgas/pic1.jpg')}}" alt="" class="img-cover">
-                        </div>
-                        
+                      
+
+                       
                     
                        
                     </div>

@@ -59,11 +59,31 @@ class HomeController extends Controller
     }
     public function services()
     {
-        return view('front.services');
+        SEOTools::setTitle('Our Services | Apex Engineering Limited | Best Engineering Firm In Somalia');
+        SEOTools::setDescription('Apex Engineering Limited Services');
+        SEOTools::opengraph()->setUrl('http://apexengltd.com/services');
+        SEOTools::setCanonical('http://apexengltd.com/services');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@apexengineering');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        $Content = DB::table('categories')->get();
+        return view('front.services',compact('Content'));
     }
-    public function services_single()
+    public function services_single($slung)
     {
-        return view('front.service');
+        $Categories = DB::table('categories')->where('slung',$slung)->get();
+        foreach($Categories as $Cat){
+            $title = html_entity_decode($Cat->title, ENT_QUOTES, 'UTF-8');
+            SEOTools::setTitle(''.$title.' | Apex Engineering Limited | Best Engineering Firm In Somalia');
+            SEOTools::setDescription(''.$Cat->meta.'');
+            SEOTools::opengraph()->setUrl('http://apexengltd.com/services/'.$slung.'');
+            SEOTools::setCanonical('http://apexengltd.com/'.$slung.'');
+            SEOTools::opengraph()->addProperty('type', 'articles');
+            SEOTools::twitter()->setSite('@apexengineering');
+            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+            $Content = DB::table('categories')->get();
+            return view('front.service',compact('Categories'));
+        }
     }
     public function portfolios()
     {
