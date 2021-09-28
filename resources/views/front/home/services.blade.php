@@ -11,7 +11,7 @@
                 <div class="item">
                     <div class="dlab-box service-media-bx">
                         <div class="dlab-media"> 
-                            <a href="{{url('/')}}/services/{{$Service->slung}}"><img src="{{asset('theme/images/our-services/preview.jpg')}}" class="lazy" data-src="{{url('/')}}/uploads/categories/{{$Service->image}}" alt="{{$Service->title}}"></a> 
+                            <a style="min-height:213px !important;" href="{{url('/')}}/services/{{$Service->slung}}"><img style="min-height:213px !important;" src="{{url('/')}}/uploads/categories/{{$Service->image}}" class="lazy" data-src="{{url('/')}}/uploads/categories/{{$Service->image}}" alt="{{$Service->title}}"></a> 
                         </div>
                         <div class="dlab-info text-center">
                             <h2 class="dlab-title"><a href="{{url('/')}}/services/{{$Service->slung}}">{!! html_entity_decode($Service->title, ENT_QUOTES, 'UTF-8') !!}</a></h2>

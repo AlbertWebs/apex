@@ -22,13 +22,11 @@ Route::get('/the-company', [App\Http\Controllers\HomeController::class, 'company
 Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 Route::get('/services/{slung}', [App\Http\Controllers\HomeController::class, 'services_single'])->name('services-single');
 Route::get('/portfolios', [App\Http\Controllers\HomeController::class, 'portfolios'])->name('portfolios');
-Route::get('/portfolios/single', [App\Http\Controllers\HomeController::class, 'portfolios_single'])->name('portfolios-single');
+Route::get('/portfolios/{single}', [App\Http\Controllers\HomeController::class, 'portfolios_single'])->name('portfolios-single');
 Route::get('/latest-news', [App\Http\Controllers\HomeController::class, 'latest_news'])->name('latest-news');
-
 Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy_policy'])->name('privacy-policy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
-
 Route::post('/news-letters', [App\Http\Controllers\HomeController::class, 'news_letters'])->name('news-letters');
 
 Auth::routes();

@@ -10,10 +10,15 @@
             <div class="col-lg-12 text-center">
                 <div class="site-filters m-b20 filters2">
                     <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active"><input type="radio"><a href="#"><i class="flaticon-worker"></i><span>Construction</span></a></li>
-                        <li data-filter="penthouse" class="btn"><input type="radio"><a href="#"><i class="flaticon-crane"></i><span>Architecture</span></a></li>
-                        <li data-filter="royal" class="btn"><input type="radio"><a href="#"><i class="flaticon-analytics"></i><span>Consulting</span></a></li>
-                        <li data-filter="standard" class="btn"><input type="radio"><a href="#"><i class="flaticon-optimization"></i><span>Engineering </span></a></li>
+                        <?php $Labels = DB::table('categories')->distinct()->get(['labels']); $Count = 1; ?>
+                        @foreach ($Labels as $item)
+                        @if($Count == 1)
+                        <li data-filter="" class="btn active"><input type="radio"><a href="#"><i class="flaticon-worker"></i><span>{{$item->labels}}</span></a></li>
+                        @else
+                        <li data-filter="{{$item->labels}}" class="btn"><input type="radio"><a href="#"><i class="flaticon-crane"></i><span>{{$item->labels}}</span></a></li>
+                        @endif
+                        <?php $Count = $Count+1 ?>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -21,102 +26,25 @@
         <div class="row p-l0 sp10">
             <div class="col-lg-12">
                 <ul id="masonry" class="dlab-gallery-listing gallery mfp-gallery text-center">
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 royal">
+                    <?php $Cases = DB::table('cases')->limit(6)->get() ?>
+                    @foreach ($Cases as $cases)
+                    <li class="card-container col-lg-4 col-md-6 col-sm-6 {{$cases->service}}">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
                             <img src="{{asset('theme/images/portfolio/construct/image_2.jpg')}}" alt=""/>
                             <div class="overlay-bx">
                                 <div class="portinner">
                                     <div class="port-up">
-                                        <span class="text-primary">Building</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
+                                        <span class="text-primary">{{$cases->Consultant}}</span>
+                                        <h3 class="port-title"><a href="#">{{$cases->title}}</a></h3>
                                     </div>
                                     <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
+                                        <a href="{{url('/')}}/portfolios/{{$cases->slung}}" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard penthouse">
-                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_1.jpg')}}" alt=""/>
-                            <div class="overlay-bx">
-                                <div class="portinner">
-                                    <div class="port-up">
-                                        <span class="text-primary">Industry</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
-                                    </div>
-                                    <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 royal">
-                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_3.jpg')}}" alt=""/>
-                            <div class="overlay-bx">
-                                <div class="portinner">
-                                    <div class="port-up">
-                                        <span class="text-primary">Manufacturing</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
-                                    </div>
-                                    <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 penthouse">
-                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_4.jpg')}}" alt=""/>
-                            <div class="overlay-bx">
-                                <div class="portinner">
-                                    <div class="port-up">
-                                        <span class="text-primary">Building</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
-                                    </div>
-                                    <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard">
-                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_5.jpg')}}" alt=""/>
-                            <div class="overlay-bx">
-                                <div class="portinner">
-                                    <div class="port-up">
-                                        <span class="text-primary">Industry</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
-                                    </div>
-                                    <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-lg-4 col-md-6 col-sm-6 standard penthouse">
-                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_6.jpg')}}" alt=""/>
-                            <div class="overlay-bx">
-                                <div class="portinner">
-                                    <div class="port-up">
-                                        <span class="text-primary">Manufacturing</span>
-                                        <h3 class="port-title"><a href="#">Westlands Sarit Center</a></h3>
-                                    </div>
-                                    <div class="port-down">
-                                        <a href="#" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
