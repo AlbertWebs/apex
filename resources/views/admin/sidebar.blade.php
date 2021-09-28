@@ -79,16 +79,12 @@
             {{--  --}}
 
             {{--  --}}
-            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Academia </a>
+            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-suitcase" aria-hidden="true"></i> Portfolio </a>
                 <div class="collapsible-body left-sub-menu">
                     <ul>
-                        <li><a href="{{url('/')}}/admin/courses">All Courses </a>
+                        <li><a href="{{url('/')}}/admin/casestudies">All Projects </a>
                         </li>
-                        <li><a href="{{url('/')}}/admin/addCourse">Add Course </a>
-                        </li>
-                        <li><a href="{{url('/')}}/admin/topics">All Topics </a>
-                        </li>
-                        <li><a href="{{url('/')}}/admin/addTopic">Add Topic </a>
+                        <li><a href="{{url('/')}}/admin/addCourse">Add Projects </a>
                         </li>
                     </ul>
                 </div>

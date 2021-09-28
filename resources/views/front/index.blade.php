@@ -11,6 +11,9 @@
     {{-- Mision vision & Values --}}
     @include('front.home.vision-mission-values')
 
+    {{--  --}}
+    @include('front.home.services')
+
     {{-- Latest News --}}
     @include('front.home.latest')
 

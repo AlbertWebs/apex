@@ -56,7 +56,7 @@
                         @foreach ($Category as $item)
                         <tr>
                             <td>{{$item->id}}</td>
-                            <td>{{$item->title}}</td>
+                            <td>{!! html_entity_decode($item->title, ENT_QUOTES, 'UTF-8') !!}</td>
                            
                             <td><a href="{{url('/')}}/admin/editCategories/{{$item->id}}" class="sb2-2-1-edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                             </td>

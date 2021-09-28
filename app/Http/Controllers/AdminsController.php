@@ -20,6 +20,7 @@ use VideoThumbnail;
 use App\Models\How;
 
 use App\Models\Slider;
+use App\Models\Cases;
 
 use App\Models\User;
 
@@ -1830,6 +1831,13 @@ class AdminsController extends Controller
         return response()->json(['success'=>'Deleted Successfully!']);
     }   
 
+    public function deleteCaseStudiesAjax(Request $request){
+        activity()->log('Evoked a delete How it works Request');
+        $id = $request->id;
+        DB::table('cases')->where('id',$id)->delete();
+        return response()->json(['success'=>'Deleted Successfully!']);
+    }   
+
         
     public function updateSiteSettingsAjax(Request $request){
         activity()->log('Evoked an update Settings Request');
@@ -1936,6 +1944,354 @@ class AdminsController extends Controller
         return "Done";
     }
     
+
+    // Case Study
+public function addCaseStudy(){
+    $page_title = 'formfiletext';//For Layout Inheritance
+    $page_name = 'add Case Study';
+    return view('admin.addCaseStudy',compact('page_title','page_name'));
+}
+
+public function add_CaseStudy(Request $request){
+
+    $path = 'uploads/casestudies';
+    if(isset($request->image_one)){
+        $fileSize = $request->file('image_one')->getClientSize();
+            if($fileSize>=2000000){
+            Session::flash('message', "File Exceeded the maximum allowed Size");
+            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+            return Redirect::back();
+            }else{
+            
+            $file = $request->file('image_one');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_one = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_one);
+            }
+    }else{
+        $image_one = $request->pro_img_cheat;
+    }
+
+    if(isset($request->image_two)){
+        $fileSize = $request->file('image_two')->getClientSize();
+         if($fileSize>=2000000){
+            Session::flash('message', "File Exceeded the maximum allowed Size");
+            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+            
+         }else{
+            
+            $file = $request->file('image_two');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_two = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_two);
+         }
+    }else{
+        $image_two = $request->pro_img_cheat;
+    }
+
+    
+    if(isset($request->image_three)){
+        $fileSize = $request->file('image_three')->getClientSize();
+        if($fileSize>=2000000){
+           Session::flash('message', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+           
+            $file = $request->file('image_three');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_three = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_three);
+        }
+    }else{
+        $image_three = $request->pro_img_cheat;
+    }
+    //Additional images
+    
+    if(isset($request->image_four)){
+        $fileSize = $request->file('image_four')->getClientSize();
+        if($fileSize>=2000000){
+           Session::flash('message', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+        
+            $file = $request->file('image_four');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_four = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_four);
+        }
+    }else{
+        $image_four = $request->pro_img_cheat;
+    }
+
+    
+
+    if(isset($request->image_five)){
+        $fileSize = $request->file('image_five')->getClientSize();
+        if($fileSize>=2000000){
+           Session::flash('message', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+            
+            $file = $request->file('image_five');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_five = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_five);
+        }
+    }else{
+        $image_five = $request->pro_img_cheat;
+    }
+
+    if(isset($request->thumbnail)){
+        $fileSize = $request->file('thumbnail')->getClientSize();
+        if($fileSize>=2000000){
+           Session::flash('message', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+            
+            $file = $request->file('thumbnail');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $thumbnail = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $thumbnail);
+        }
+    }else{
+        $thumbnail = $request->pro_img_cheat;
+    }
+
+    
+
+    if(isset($request->link)){
+        $Video = 1;
+    }else{
+        $Video = 0;
+    }
+    $slung = str_slug($request->name);
+    $Portfolio = new Cases;
+    $Portfolio->title = $request->name;
+    $Portfolio->slung = $slung;
+    $Portfolio->meta = $request->meta;
+    $Portfolio->scope = $request->scope;
+    $Portfolio->content = $request->content;
+    $Portfolio->client = $request->client;
+    $Portfolio->Consultant = $request->Consultant;
+    $Portfolio->Project_contractor = $request->Project_contractor;
+    $Portfolio->location = $request->venue;
+    $Portfolio->Product_specification = $request->Product_specification;
+    $Portfolio->Application = $request->Application;
+    $Portfolio->Site_services = $request->Site_services;
+    $Portfolio->video = $request->video;
+    $Portfolio->service = $request->service;
+    $Portfolio->image_one = $image_one;
+    $Portfolio->image_two = $image_two;
+    $Portfolio->image_three = $image_three;
+    $Portfolio->image_four = $image_four;
+    $Portfolio->image_five = $image_five;
+    $Portfolio->thumbnail = $thumbnail;
+    $Portfolio->save();
+  
+    Session::flash('message', "Case Study Has Been Added");
+    return Redirect::back();
+}
+
+
+public function casestudies(){
+    $Portfolio = Cases::all();
+    $page_title = 'list';
+    $page_name = 'Portfolio';
+    return view('admin.casestudies',compact('page_title','Portfolio','page_name'));
+}
+
+public function editCaseStudies($id){
+    $Portfolio = Cases::find($id);
+    $page_title = 'formfiletext';
+    $page_name = 'Edit Case Study';
+    return view('admin.editCaseStudies',compact('page_title','Portfolio','page_name'));
+}
+
+
+public function edit_CaseStudies(Request $request, $id){
+    $path = 'uploads/casestudies';
+    if(isset($request->image_one)){
+        $fileSize = $request->file('image_one')->getClientSize();
+            if($fileSize>=200000000){
+            Session::flash('message', "File Exceeded the maximum allowed Size");
+            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+            return Redirect::back();
+            }else{
+            
+            $file = $request->file('image_one');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_one = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_one);
+            }
+    }else{
+        $image_one = $request->image_one_cheat;
+    }
+
+    if(isset($request->image_two)){
+        $fileSize = $request->file('image_two')->getClientSize();
+         if($fileSize>=200000000){
+            Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
+            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+            
+         }else{
+            
+            $file = $request->file('image_two');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_two = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_two);
+         }
+    }else{
+        $image_two = $request->image_two_cheat;
+    }
+
+    
+    if(isset($request->image_three)){
+        $fileSize = $request->file('image_three')->getClientSize();
+        if($fileSize>=200000000){
+           Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+           
+            $file = $request->file('image_three');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_three = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_three);
+        }
+    }else{
+        $image_three = $request->image_three_cheat;
+    }
+    //Additional images
+    
+    if(isset($request->image_four)){
+        $fileSize = $request->file('image_four')->getClientSize();
+        if($fileSize>=200000000){
+           Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+        
+            $file = $request->file('image_four');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_four = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_four);
+        }
+    }else{
+        $image_four = $request->image_four_cheat;
+    }
+
+    
+
+    if(isset($request->image_five)){
+        $fileSize = $request->file('image_five')->getClientSize();
+        if($fileSize>=200000000){
+           Session::flash('message_image_five', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+            
+            $file = $request->file('image_five');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image_five = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image_five);
+        }
+    }else{
+        $image_five = $request->image_five_cheat;
+    }
+
+    if(isset($request->thumbnail)){
+        $fileSize = $request->file('thumbnail')->getClientSize();
+        if($fileSize>=2000000){
+           Session::flash('message', "File Exceeded the maximum allowed Size");
+           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+           
+        }else{
+            
+            $file = $request->file('thumbnail');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $thumbnail = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $thumbnail);
+        }
+    }else{
+        $thumbnail = $request->thumbnail_cheat;
+    }
+
+    
+   
+    $slung = str_slug($request->name);
+    $updateDetails = array(
+        'title' => $request->name,
+        'slung' => $slung,
+        'meta' => $request->slung,
+        'scope' => $request->scope,
+        'content' => $request->content,
+        'service' => $request->service,
+        'Consultant' => $request->Consultant,
+        'Project_contractor' => $request->Project_contractor,
+        'Product_specification' => $request->Product_specification,
+        'Application' => $request->Application,
+        'Site_services' => $request->Site_services,
+        'video' => $request->video,
+        'location' => $request->venue,
+        'client' => $request->client,
+        'image_one' =>$image_one,
+        'image_two' =>$image_two,
+        'image_three' =>$image_three,
+        'thumbnail' => $thumbnail,
+        'image_four' =>$image_four,
+        'image_five' =>$image_five
+        
+    );
+    DB::table('cases')->where('id',$id)->update($updateDetails);
+    Session::flash('message', "Changes have been saved");
+    return Redirect::back();
+}
+
+public function deleteCaseStudies($id){
+    DB::table('cases')->where('id',$id)->delete();
+   
+    return Redirect::back();
+}
     
 }
 

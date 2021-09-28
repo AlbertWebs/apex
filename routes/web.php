@@ -157,6 +157,13 @@ Route::get('admin/editBlog/{id}', [AdminsController::class, 'editBlog'])->middle
 Route::post('admin/edit_Blog/{id}', [AdminsController::class, 'edit_Blog'])->middleware('is_admin');
 Route::get('admin/delete_Blog/{id}', [AdminsController::class, 'delete_Blog'])->middleware('is_admin');
 
+// CaseStudies
+Route::get('admin/casestudies',[AdminsController::class,'casestudies'])->middleware('is_admin');
+Route::get('admin/editCaseStudies/{id}',[AdminsController::class,'editCaseStudies'])->middleware('is_admin');
+Route::get('admin/deleteCaseStudies/{id}',[AdminsController::class,'deleteCaseStudies'])->middleware('is_admin');
+Route::post('admin/edit_CaseStudies/{id}',[AdminsController::class,'edit_CaseStudies'])->middleware('is_admin');
+Route::get('admin/addCaseStudy', [AdminsController::class,'addCaseStudy'])->middleware('is_admin');
+Route::post('admin/add_CaseStudy', [AdminsController::class, 'add_CaseStudy'])->middleware('is_admin');
 
 // Payments
 Route::get('admin/b2b', [AdminsController::class, 'b2b'])->middleware('is_admin');
@@ -219,6 +226,8 @@ Route::post('admin/deleteHowAjax', [AdminsController::class, 'deleteHowAjax'])->
 Route::post('admin/deleteCoursesAjax', [AdminsController::class, 'deleteCoursesAjax'])->middleware('is_admin');
 Route::post('admin/deleteTopicsAjax', [AdminsController::class, 'deleteTopicsAjax'])->middleware('is_admin');
 Route::post('admin/deleteSignalsAjax', [AdminsController::class, 'deleteSignalsAjax'])->middleware('is_admin');
+Route::post('admin/deleteCaseStudiesAjax', [AdminsController::class, 'deleteCaseStudiesAjax'])->middleware('is_admin');
+
 
 
 // For Tests

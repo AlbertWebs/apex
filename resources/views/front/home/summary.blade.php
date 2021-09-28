@@ -1,8 +1,10 @@
 <div class="section-full bg-gray content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
     <div class="container">
         <div class="section-head style2 text-center">
-            <h2 class="title m-b10">Design Projects</h2>
-            <p>There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+            <h2 class="title m-b10">Our Projects</h2>
+            <p>At Apex Engineering LTD we commit the same attention and expertise to every project in our office. We have engineered a diverse range of projects including large master planned and mixed use communities, single and multi-family residential developments, commercial and retail shopping centers, office parks, industrial areas, schools, institutional centers, and government offices.
+
+            </p>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -11,7 +13,7 @@
                         <li data-filter="" class="btn active"><input type="radio"><a href="#"><i class="flaticon-worker"></i><span>Construction</span></a></li>
                         <li data-filter="penthouse" class="btn"><input type="radio"><a href="#"><i class="flaticon-crane"></i><span>Architecture</span></a></li>
                         <li data-filter="royal" class="btn"><input type="radio"><a href="#"><i class="flaticon-analytics"></i><span>Consulting</span></a></li>
-                        <li data-filter="standard" class="btn"><input type="radio"><a href="#"><i class="flaticon-optimization"></i><span>Mechanical</span></a></li>
+                        <li data-filter="standard" class="btn"><input type="radio"><a href="#"><i class="flaticon-optimization"></i><span>Engineering </span></a></li>
                     </ul>
                 </div>
             </div>

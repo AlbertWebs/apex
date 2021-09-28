@@ -37,7 +37,7 @@
                             
                                            
                             <br><br>
-                            <a download href="{{url('/')}}/uploads/profile.pdf" class="site-button black btnhover20"><i class="ti-download"></i> Company Profile</a>
+                            <a download href="{{url('/')}}/uploads/APEXengineerycompanyprofile.pdf" class="site-button black btnhover20"><i class="ti-download"></i> Company Profile</a>
                                         <br><br>
                         </div>
                     </div>
