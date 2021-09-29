@@ -4,90 +4,18 @@
             <h2 class="title text-capitalize">We work with our partners to provide project perfection,<br/><span class="text-primary">Our Partners</span></h2>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
+            <?php $Clients = DB::table('clients')->where('type','partner')->get(); ?>
+            @foreach ($Clients as $item)
+            <div class="col-xs-6 col-lg-2 col-md-6 col-sm-6  p-b20">
                 <div class="ow-client-logo">
                     <div class="client-logo border">
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a>
+                        <a href="javascript:void(0);"><img src="{{url('/')}}/uploads/clients/{{$item->image}}" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo2.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo1.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo4.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-3 col-md-6 col-sm-6  p-b20">
-                <div class="ow-client-logo">
-                    <div class="client-logo border"> 
-                        <a href="javascript:void(0);"><img src="{{asset('theme/images/client-logo/logo3.jpg')}}" alt=""></a> 
-                    </div>
-                </div>
-            </div>
+            @endforeach
+           
+            
         </div>
     </div>
 </div>

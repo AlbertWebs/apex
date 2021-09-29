@@ -101,6 +101,14 @@ Route::post('admin/add_Topic', [AdminsController::class, 'add_Topic'])->middlewa
 Route::post('admin/edit_Topic/{id}', [AdminsController::class, 'edit_Topic'])->middleware('is_admin');
 Route::get('admin/delete_Topic/{id}', [AdminsController::class, 'delete_Topic'])->middleware('is_admin');
 
+// Clients
+Route::get('admin/clients', [AdminsController::class, 'Clients'])->middleware('is_admin');
+Route::get('admin/addClient', [AdminsController::class, 'addClient'])->middleware('is_admin');
+Route::get('admin/editClient/{id}', [AdminsController::class, 'editClient'])->middleware('is_admin');
+Route::post('admin/add_Client', [AdminsController::class, 'add_Client'])->middleware('is_admin');
+Route::post('admin/edit_Client/{id}', [AdminsController::class, 'edit_Client'])->middleware('is_admin');
+Route::get('admin/delete_Client/{id}', [AdminsController::class, 'delete_Client'])->middleware('is_admin');
+
 // Copyright Statement
 Route::get('admin/editCopyright', [AdminsController::class, 'copyright'])->middleware('is_admin');
 Route::post('admin/edit_Copyright', [AdminsController::class, 'edit_copyright'])->middleware('is_admin');

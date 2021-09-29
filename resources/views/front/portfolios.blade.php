@@ -40,7 +40,7 @@
                             <div class="section-head style2 text-center">
                                 <h2 class="title m-b10">Our Projects</h2>
                                 <p>At Apex Engineering LTD we commit the same attention and expertise to every project in our office. We have engineered a diverse range of projects including large master planned and mixed use communities, single and multi-family residential developments, commercial and retail shopping centers, office parks, industrial areas, schools, institutional centers, and government offices.
-                    
+
                                 </p>
                             </div>
                             <div class="row">

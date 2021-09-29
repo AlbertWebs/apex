@@ -90,6 +90,17 @@
                 </div>
             </li>
             {{--  --}}
+            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-suitcase" aria-hidden="true"></i> Client/Partners </a>
+                <div class="collapsible-body left-sub-menu">
+                    <ul>
+                        <li><a href="{{url('/')}}/admin/clients">All Clients </a>
+                        </li>
+                        <li><a href="{{url('/')}}/admin/addClient">Add Client </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            {{--  --}}
 
                      {{--  --}}
                      <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bar-chart" aria-hidden="true"></i> Signals </a>

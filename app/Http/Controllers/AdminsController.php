@@ -42,6 +42,8 @@ use App\Models\Topic;
 
 use App\Models\SendMails;
 
+use App\Models\Client;
+
 use Illuminate\Http\Request;
 
 // use Request;
@@ -1224,6 +1226,97 @@ class AdminsController extends Controller
     public function delete_Course($id){
         activity()->log('Deleted Course ID number '.$id.' ');
         DB::table('courses')->where('id',$id)->delete();
+        return Redirect::back();
+    }
+
+
+    // Add Client
+    public function addClient(){
+       
+        activity()->log('Access The Add Clients');
+       
+        $page_name = 'Add How It Works';
+        $page_title = 'formfiletext';//For Style Inheritance
+        return view('admin.addClient',compact('page_title','page_name'));
+    }
+
+
+    public function add_Client(Request $request){
+        
+        
+        activity()->log('Evoked Add Client');
+        $path = 'uploads/clients';
+        if(isset($request->image)){
+                $file = $request->file('image');
+                $filename = str_replace(' ', '', $file->getClientOriginalName());
+                $timestamp = new Datetime();
+                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $image_main_temp = $new_timestamp.'image'.$filename;
+                $image = str_replace(' ', '',$image_main_temp);
+                $file->move($path, $image);      
+        }else{
+            $image = 'Thumbnail.png';
+        }
+
+        
+        $Client = new Client;
+        $Client->title = $request->title;
+        $Client->image = $image;
+        $Client->link = $request->link;
+        $Client->type = $request->type;        
+        $Client->save();
+        Session::flash('message', "Content Has been Added");
+        return Redirect::back();
+    }
+       
+    public function clients(){
+        activity()->log('Accessed All Clients Page');
+        $Client = Client::All();
+        $page_name = 'All Clients';
+        $page_title = 'list';
+        return view('admin.clients',compact('page_title','Client','page_name'));
+    }
+
+    public function editClient($id){
+        activity()->log('Accessed Client Edit ID number '.$id.' ');
+        $Client = Client::find($id);
+        $page_name = $Client->title;
+        $page_title = 'formfiletext';//For Style Inheritance
+        return view('admin.editClient')->with('Client',$Client)->with('page_name',$page_name)->with('page_title',$page_title);
+    }
+
+    public function edit_Client(Request $request, $id){
+        $path = 'uploads/clients';
+        if(isset($request->image)){
+            $file = $request->file('image');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'image'.$filename;
+            $image = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $image);      
+        }else{
+            $image = $request->image_cheat;
+        }
+
+       
+
+        activity()->log('Edited Client ID number '.$id.' ');
+        $updateDetails = array(
+            'title'=>$request->title,
+            'type'=>$request->type,
+            'link' =>$request->link,
+            'image' =>$image,
+        );
+        DB::table('clients')->where('id',$id)->update($updateDetails);
+        Session::flash('message', "Changes have been saved");
+            return Redirect::back();
+    }
+
+
+    public function delete_Client($id){
+        activity()->log('Deleted Client ID number '.$id.' ');
+        DB::table('clients')->where('id',$id)->delete();
         return Redirect::back();
     }
 
