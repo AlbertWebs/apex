@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.master-home')
 @section('content')
   <!-- Content -->
   <div class="page-content bg-white">

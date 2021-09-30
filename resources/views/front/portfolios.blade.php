@@ -23,9 +23,9 @@
             <div class="content-block">
                 <!-- Services Info Head -->
                 <div class="section-full content-inner-2 bg-white">
-                    <div class="container bg-gray">
-                        <div class="row bg-gray">
-                            <div class="col-lg-12 service-main-title text-center bg-gray">
+                    <div class="container bg-white">
+                        <div class="row bg-white">
+                            <div class="col-lg-12 service-main-title text-center bg-white">
                                 <h3 class="title max-w700 m-auto text-black">What may appear the impossible, becomes very possible with Apex Engineering Limited.</h3>
                             </div>
                         </div>
