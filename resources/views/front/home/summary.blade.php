@@ -30,12 +30,12 @@
                     @foreach ($Cases as $cases)
                     <li class="card-container col-lg-4 col-md-6 col-sm-6 {{$cases->service}}">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{url('/')}}/uploads/casestudies/{{$cases->image_one}}" alt=""/>
+                            <img style="min-height:253px !important;" src="{{url('/')}}/uploads/casestudies/{{$cases->image_one}}" alt=""/>
                             <div class="overlay-bx">
                                 <div class="portinner">
                                     <div class="port-up">
                                         <span class="text-primary">{{$cases->Consultant}}</span>
-                                        <h3 class="port-title"><a href="#">{{$cases->title}}</a></h3>
+                                        <h6 class="port-title"><a href="{{url('/')}}/portfolios/{{$cases->slung}}">{{$cases->title}}</a></h6>
                                     </div>
                                     <div class="port-down">
                                         <a href="{{url('/')}}/portfolios/{{$cases->slung}}" class="btn-link">View Detail <i class="la la-arrow-right"></i></a>
@@ -48,5 +48,12 @@
                 </ul>
             </div>
         </div>
+        {{--  --}}
+        <br><br>
+        <center>
+            <a download="" href="{{url('/')}}/portfolios" class="site-button
+            btnhover20"><i class="fa fa-suitcase"></i> &nbsp; All Projects</a>
+        </center>
+        {{--  --}}
     </div>
 </div>

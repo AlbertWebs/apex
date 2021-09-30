@@ -66,61 +66,28 @@
 						</div>
 						<h2 class="text-black font-weight-600 m-b15">Scope Of Work</h2>
 						<p>{!! html_entity_decode($item->scope, ENT_QUOTES, 'UTF-8') !!}</p>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="icon-bx-wraper m-b30 left">
-									<div class="icon-md"> 
-										<a href="javascript:void(0);" class="icon-cell text-primary">
-											<i class="flaticon-factory"></i>
-										</a> 
-									</div>
-									<div class="icon-content">
-										<h5 class="dlab-tilte">Material Engineering</h5>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..</p>
-									</div>
-								</div>
-								<div class="icon-bx-wraper m-b30 left">
-									<div class="icon-md"> 
-										<a href="javascript:void(0);" class="icon-cell text-primary">
-											<i class="flaticon-settings"></i>
-										</a> 
-									</div>
-									<div class="icon-content">
-										<h5 class="dlab-tilte">Chemical Research</h5>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..</p>
-									</div>
-								</div>
-								<div class="icon-bx-wraper left">
-									<div class="icon-md"> 
-										<a href="javascript:void(0);" class="icon-cell text-primary">
-											<i class="flaticon-worker"></i>
-										</a> 
-									</div>
-									<div class="icon-content">
-										<h5 class="dlab-tilte">Petroleum Engineering</h5>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod..</p>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="row">
-							{{-- Showreel --}}
-							<div class="dlab-box dlab-gallery-box">
-								<div class="dlab-media dlab-img-overlay1 dlab-img-effect ">
-									<a href="portfolio-details.html"> <img src="{{asset('theme/images/portfolio/image_6.jpg')}}" alt=""> </a>
-									<div class="overlay-bx">
-										<div class="overlay-icon">
-											<div class="text-white">
-												<a href="{{$item->video}}" class="popup-youtube video play-btn"><i class="fa fa-play icon-bx-xs"></i></a> 
+                            @if($item->video == null or $item->video == "0")
+
+							@else
+								{{-- Showreel --}}
+								<div class="dlab-box dlab-gallery-box">
+									<div class="dlab-media dlab-img-overlay1 dlab-img-effect ">
+										<a href="portfolio-details.html"> <img src="{{asset('theme/images/portfolio/image_6.jpg')}}" alt=""> </a>
+										<div class="overlay-bx">
+											<div class="overlay-icon">
+												<div class="text-white">
+													<a href="{{$item->video}}" class="popup-youtube video play-btn"><i class="fa fa-play icon-bx-xs"></i></a> 
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-			
-							{{-- Showreel --}}
+								{{-- Showreel --}}
+							@endif
+
 							@if($item->image_one == null or $item->image_one == 0)
 
 							@else 
