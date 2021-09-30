@@ -30,7 +30,7 @@
                     @foreach ($Cases as $cases)
                     <li class="card-container col-lg-4 col-md-6 col-sm-6 {{$cases->service}}">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                            <img src="{{asset('theme/images/portfolio/construct/image_2.jpg')}}" alt=""/>
+                            <img src="{{url('/')}}/uploads/casestudies/{{$cases->image_one}}" alt=""/>
                             <div class="overlay-bx">
                                 <div class="portinner">
                                     <div class="port-up">

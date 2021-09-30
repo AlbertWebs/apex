@@ -2049,7 +2049,7 @@ public function add_CaseStudy(Request $request){
 
     $path = 'uploads/casestudies';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=2000000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2069,7 +2069,7 @@ public function add_CaseStudy(Request $request){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=2000000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2090,7 +2090,7 @@ public function add_CaseStudy(Request $request){
 
     
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2111,7 +2111,7 @@ public function add_CaseStudy(Request $request){
     //Additional images
     
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2133,7 +2133,7 @@ public function add_CaseStudy(Request $request){
     
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2153,7 +2153,7 @@ public function add_CaseStudy(Request $request){
     }
 
     if(isset($request->thumbnail)){
-        $fileSize = $request->file('thumbnail')->getClientSize();
+        $fileSize = $request->file('thumbnail')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2174,25 +2174,16 @@ public function add_CaseStudy(Request $request){
 
     
 
-    if(isset($request->link)){
-        $Video = 1;
-    }else{
-        $Video = 0;
-    }
+  
     $slung = str_slug($request->name);
     $Portfolio = new Cases;
     $Portfolio->title = $request->name;
-    $Portfolio->slung = $slung;
-    $Portfolio->meta = $request->meta;
+    $Portfolio->slung = Str::slug($request->name);
     $Portfolio->scope = $request->scope;
     $Portfolio->content = $request->content;
     $Portfolio->client = $request->client;
     $Portfolio->Consultant = $request->Consultant;
-    $Portfolio->Project_contractor = $request->Project_contractor;
-    $Portfolio->location = $request->venue;
-    $Portfolio->Product_specification = $request->Product_specification;
-    $Portfolio->Application = $request->Application;
-    $Portfolio->Site_services = $request->Site_services;
+    $Portfolio->location = $request->location;
     $Portfolio->video = $request->video;
     $Portfolio->service = $request->service;
     $Portfolio->image_one = $image_one;
@@ -2202,7 +2193,7 @@ public function add_CaseStudy(Request $request){
     $Portfolio->image_five = $image_five;
     $Portfolio->thumbnail = $thumbnail;
     $Portfolio->save();
-  
+ 
     Session::flash('message', "Case Study Has Been Added");
     return Redirect::back();
 }
@@ -2226,7 +2217,7 @@ public function editCaseStudies($id){
 public function edit_CaseStudies(Request $request, $id){
     $path = 'uploads/casestudies';
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
+        $fileSize = $request->file('image_one')->getSize();
             if($fileSize>=200000000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2246,7 +2237,7 @@ public function edit_CaseStudies(Request $request, $id){
     }
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
+        $fileSize = $request->file('image_two')->getSize();
          if($fileSize>=200000000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2267,7 +2258,7 @@ public function edit_CaseStudies(Request $request, $id){
 
     
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
+        $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2288,7 +2279,7 @@ public function edit_CaseStudies(Request $request, $id){
     //Additional images
     
     if(isset($request->image_four)){
-        $fileSize = $request->file('image_four')->getClientSize();
+        $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2310,7 +2301,7 @@ public function edit_CaseStudies(Request $request, $id){
     
 
     if(isset($request->image_five)){
-        $fileSize = $request->file('image_five')->getClientSize();
+        $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_five', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2330,7 +2321,7 @@ public function edit_CaseStudies(Request $request, $id){
     }
 
     if(isset($request->thumbnail)){
-        $fileSize = $request->file('thumbnail')->getClientSize();
+        $fileSize = $request->file('thumbnail')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
@@ -2349,23 +2340,16 @@ public function edit_CaseStudies(Request $request, $id){
         $thumbnail = $request->thumbnail_cheat;
     }
 
-    
-   
-    $slung = str_slug($request->name);
+
     $updateDetails = array(
         'title' => $request->name,
-        'slung' => $slung,
-        'meta' => $request->slung,
+        'slung' => Str::slug($request->name),
         'scope' => $request->scope,
         'content' => $request->content,
         'service' => $request->service,
         'Consultant' => $request->Consultant,
-        'Project_contractor' => $request->Project_contractor,
-        'Product_specification' => $request->Product_specification,
-        'Application' => $request->Application,
-        'Site_services' => $request->Site_services,
         'video' => $request->video,
-        'location' => $request->venue,
+        'location' => $request->location,
         'client' => $request->client,
         'image_one' =>$image_one,
         'image_two' =>$image_two,

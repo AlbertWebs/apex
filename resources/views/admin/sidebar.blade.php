@@ -84,7 +84,7 @@
                     <ul>
                         <li><a href="{{url('/')}}/admin/casestudies">All Projects </a>
                         </li>
-                        <li><a href="{{url('/')}}/admin/addCourse">Add Projects </a>
+                        <li><a href="{{url('/')}}/admin/addCaseStudy">Add Projects </a>
                         </li>
                     </ul>
                 </div>
@@ -102,19 +102,7 @@
             </li>
             {{--  --}}
 
-                     {{--  --}}
-                     <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-bar-chart" aria-hidden="true"></i> Signals </a>
-                        <div class="collapsible-body left-sub-menu">
-                            <ul>
-                                <li><a href="{{url('/')}}/admin/signals">All Signals </a>
-                                </li>
-                                <li><a href="{{url('/')}}/admin/addSignal">Add Signal </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    {{--  --}}
-            
+                  
 
             {{--  --}}
             <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-ticket" aria-hidden="true"></i> Payments</a>
