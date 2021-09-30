@@ -22,7 +22,7 @@
             
             <div class="content-block">
                 <!-- Services Info Head -->
-                <div class="section-full content-inner-2 bg-gray">
+                <div class="section-full content-inner-2 bg-white">
                     <div class="container bg-gray">
                         <div class="row bg-gray">
                             <div class="col-lg-12 service-main-title text-center bg-gray">
@@ -86,6 +86,13 @@
                                 </div>
                             </div>
                         </div>
+                        {{--  --}}
+                        <br><br>
+                        <center>
+                            <a download="" href="{{url('/')}}/portfolios" class="site-button
+                            btnhover20"><i class="fa fa-image"></i> &nbsp; Our Gallery </a>
+                        </center>
+                        {{--  --}}
                     </div>
                 </div>
                 {{--  --}}
