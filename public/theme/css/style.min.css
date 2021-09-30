@@ -41,8 +41,9 @@ body,html{-moz-osx-font-smoothing:grayscale}body{background-color:#fff;font-fami
     opacity: 0.5;
 }
 .overlay-black-dark:after {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .overlay-black-darker:after {
-    opacity: 0.5;
+    opacity: 0.7;
 }
+
