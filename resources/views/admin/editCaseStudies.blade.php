@@ -131,6 +131,154 @@
                             CKEDITOR.replace( 'article_ckeditor' );
                         </script>
                 <br><br>
+                <div class="row">
+                    <div class="input-field col s6" style="border:1px solid #167ee6; border-radius:10px;">
+                       <div class="row">
+                            <div class="col s6">
+                                <div class="box-inn-sp box-second-inn">
+                                    <div class="inn-title">
+                                        <h4>File One</h4>
+                                        <p>Any Relevant File</p>
+                                    </div>
+                                    <div class="tab-inn">
+                                    
+                                            <div class="file-field input-field">
+                                                <div class="btn">
+                                                    <span>File</span>
+                                                    <input name="file_one" type="file">
+                                                </div>
+                                                <div class="file-path-wrapper">
+                                                    <input class="file-path validate" type="text">
+                                                </div>
+                                            </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <embed style="min-height:259px" type="application/pdf" frameBorder="0" scrolling="auto" src="{{url('/')}}/uploads/casestudies/{{$Portfolio->file_one}}" width="100%" height="100%" />
+                            </div>
+                        </div>
+                    </div>
+                       {{--  --}}
+                    <div class="input-field col s6" style="border:1px solid #167ee6; border-radius:10px;">
+                       <div class="row">
+                        <div class="col s6">
+                            <div class="box-inn-sp box-second-inn">
+                                <div class="inn-title">
+                                    <h4>File One</h4>
+                                    <p>Any Relevant File</p>
+                                </div>
+                                <div class="tab-inn">
+                                
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                                <span>File</span>
+                                                <input name="file_two" type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text">
+                                            </div>
+                                        </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <embed style="min-height:259px" type="application/pdf" frameBorder="0" scrolling="auto" src="{{url('/')}}/uploads/casestudies/{{$Portfolio->file_two}}" width="100%" height="100%" />
+                        </div>
+                       </div>
+                    </div>
+                       {{--  --}}
+                    <div class="input-field col s6" style="border:1px solid #167ee6; border-radius:10px;">
+                       <div class="row">
+                            <div class="col s6">
+                                <div class="box-inn-sp box-second-inn">
+                                    <div class="inn-title">
+                                        <h4>File One</h4>
+                                        <p>Any Relevant File</p>
+                                    </div>
+                                    <div class="tab-inn">
+                                    
+                                            <div class="file-field input-field">
+                                                <div class="btn">
+                                                    <span>File</span>
+                                                    <input name="file_three" type="file">
+                                                </div>
+                                                <div class="file-path-wrapper">
+                                                    <input class="file-path validate" type="text">
+                                                </div>
+                                            </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <embed style="min-height:259px" type="application/pdf" frameBorder="0" scrolling="auto" src="{{url('/')}}/uploads/casestudies/{{$Portfolio->file_three}}" width="100%" height="100%" />
+                            </div>
+                       </div>
+                    </div>
+                       {{--  --}}
+                    <div class="input-field col s6" style="border:1px solid #167ee6; border-radius:10px;">
+                       <div class="row">
+                        <div class="col s6">
+                            <div class="box-inn-sp box-second-inn">
+                                <div class="inn-title">
+                                    <h4>File One</h4>
+                                    <p>Any Relevant File</p>
+                                </div>
+                                <div class="tab-inn">
+                                
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                                <span>File</span>
+                                                <input name="file_four" type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text">
+                                            </div>
+                                        </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <embed style="min-height:259px" type="application/pdf" frameBorder="0" scrolling="auto" src="{{url('/')}}/uploads/casestudies/{{$Portfolio->file_four}}" width="100%" height="100%" />
+                        </div>
+                       </div>
+                    </div>
+                       {{--  --}}
+                    <div class="input-field col s6" style="border:1px solid #167ee6; border-radius:10px;">
+                       <div class="row">
+                        <div class="col s6">
+                            <div class="box-inn-sp box-second-inn">
+                                <div class="inn-title">
+                                    <h4>File One</h4>
+                                    <p>Any Relevant File</p>
+                                </div>
+                                <div class="tab-inn">
+                                
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                                <span>File</span>
+                                                <input name="file_five" type="file">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text">
+                                            </div>
+                                        </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <embed style="min-height:259px" type="application/pdf" frameBorder="0" scrolling="auto" src="{{url('/')}}/uploads/casestudies/{{$Portfolio->file_five}}" width="100%" height="100%" />
+                        </div>
+                       </div>
+                    </div>
+                       {{--  --}}
+                </div>
+                {{--  --}}
                      {{-- Images --}}
                                  {{-- Preview --}}
                             {{-- Style --}}
@@ -247,12 +395,14 @@
                             {{--  --}}
 
                             {{--  --}}
-                            <input type="hidden" name="file_cheat" value="{{$Portfolio->file_one}}">
+                            <input type="hidden" name="file_one_cheat" value="{{$Portfolio->file_one}}">
                             <input type="hidden" name="file_two_cheat" value="{{$Portfolio->file_two}}">
                             <input type="hidden" name="file_three_cheat" value="{{$Portfolio->file_three}}">
                             <input type="hidden" name="file_four_cheat" value="{{$Portfolio->file_four}}">
                             <input type="hidden" name="file_five_cheat" value="{{$Portfolio->file_five}}">
                             {{--  --}}
+
+                            <br><br><br><br>
                     <div class="row">
                         <div class="input-field col s12">
                             <input type="submit" class="waves-effect waves-light btn-large" value="Save Changes">

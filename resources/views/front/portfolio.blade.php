@@ -127,6 +127,9 @@
 								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_five}}">
 							</div>
 							@endif
+							{{--  --}}
+
+							
 						</div>
 					</div>
 				</div>

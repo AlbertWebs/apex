@@ -63,7 +63,7 @@
                             <div class="row p-l0 sp10">
                                 <div class="col-lg-12">
                                     <ul id="masonry" class="dlab-gallery-listing gallery mfp-gallery text-center">
-                                        <?php $Cases = DB::table('cases')->limit(6)->get() ?>
+                                       
                                         @foreach ($Cases as $cases)
                                         <li class="card-container col-lg-4 col-md-6 col-sm-6 {{$cases->service}}">
                                             <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">

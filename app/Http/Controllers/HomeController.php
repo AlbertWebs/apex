@@ -87,7 +87,19 @@ class HomeController extends Controller
     }
     public function portfolios()
     {
-        return view('front.portfolios');
+        $Cases = DB::table('cases')->get();
+     
+       
+            SEOTools::setTitle('Our Portfolio | Apex Engineering Limited | Best Engineering Firm In Somalia');
+            SEOTools::setDescription('Our Projects');
+            SEOTools::opengraph()->setUrl('http://apexengltd.com/portfolio');
+            SEOTools::setCanonical('http://apexengltd.com/portfolio');
+            SEOTools::opengraph()->addProperty('type', 'articles');
+            SEOTools::twitter()->setSite('@apexengineering');
+            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+            
+            return view('front.portfolios',compact('Cases'));
+        
     }
     public function portfolios_single($slung)
     {

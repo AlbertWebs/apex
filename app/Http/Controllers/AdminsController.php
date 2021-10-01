@@ -2340,6 +2340,69 @@ public function edit_CaseStudies(Request $request, $id){
         $thumbnail = $request->thumbnail_cheat;
     }
 
+    if(isset($request->file_one)){
+            $file = $request->file('thumbnail');
+            $filename = str_replace(' ', '', $file->getClientOriginalName());
+            $timestamp = new Datetime();
+            $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+            $image_main_temp = $new_timestamp.'File'.$filename;
+            $file_one = str_replace(' ', '',$image_main_temp);
+            $file->move($path, $file_one);
+    }else{
+        $file_one = $request->file_one_cheat;
+    }
+
+
+    if(isset($request->file_two)){
+        $file = $request->file('file_two');
+        $filename = str_replace(' ', '', $file->getClientOriginalName());
+        $timestamp = new Datetime();
+        $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+        $image_main_temp = $new_timestamp.'File'.$filename;
+        $file_two = str_replace(' ', '',$image_main_temp);
+        $file->move($path, $file_two);
+    }else{
+        $file_two = $request->file_two_cheat;
+    }
+
+
+    if(isset($request->file_three)){
+        $file = $request->file('file_three');
+        $filename = str_replace(' ', '', $file->getClientOriginalName());
+        $timestamp = new Datetime();
+        $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+        $image_main_temp = $new_timestamp.'File'.$filename;
+        $file_three = str_replace(' ', '',$image_main_temp);
+        $file->move($path, $file_three);
+    }else{
+        $file_three = $request->file_three_cheat;
+    }
+
+
+    if(isset($request->file_four)){
+        $file = $request->file('file_four');
+        $filename = str_replace(' ', '', $file->getClientOriginalName());
+        $timestamp = new Datetime();
+        $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+        $image_main_temp = $new_timestamp.'File'.$filename;
+        $file_four = str_replace(' ', '',$image_main_temp);
+        $file->move($path, $file_four);
+    }else{
+        $file_four = $request->file_four_cheat;
+    }
+
+
+    if(isset($request->file_five)){
+        $file = $request->file('file_five');
+        $filename = str_replace(' ', '', $file->getClientOriginalName());
+        $timestamp = new Datetime();
+        $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+        $image_main_temp = $new_timestamp.'File'.$filename;
+        $file_five = str_replace(' ', '',$image_main_temp);
+        $file->move($path, $file_five);
+    }else{
+        $file_five = $request->file_five_cheat;
+    }
 
     $updateDetails = array(
         'title' => $request->name,
@@ -2356,7 +2419,12 @@ public function edit_CaseStudies(Request $request, $id){
         'image_three' =>$image_three,
         'thumbnail' => $thumbnail,
         'image_four' =>$image_four,
-        'image_five' =>$image_five
+        'image_five' =>$image_five,
+        'file_one' =>$file_one,
+        'file_two' =>$file_two,
+        'file_three' =>$file_three,
+        'file_four' =>$file_four,
+        'file_five' =>$file_five
         
     );
     DB::table('cases')->where('id',$id)->update($updateDetails);
