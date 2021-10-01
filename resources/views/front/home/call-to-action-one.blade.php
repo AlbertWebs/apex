@@ -2,8 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center service-info">
-                <h2 class="title text-white">Amazing things happen to your project when we connect those dots of utility and value.</h2>
-                <p>Some Dummy text goes here lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2 class="title text-white">We are committed to the sustainability of
+                    the communities, our clients businesses
+                    and the environments in which
+                    we live and work,</h2>
+                <p>
+                    our work reﬂects our pride; we make it our
+                    number one goal to deliver practical,
+                    yet cost-eﬃcient solutions tailored to
+                    meet your engineering needs and exceed
+                    your project expectations.
+                </p>
             </div>
         </div>
     </div>

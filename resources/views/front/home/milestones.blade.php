@@ -1,7 +1,7 @@
 <div class="section-full bg-white content-inner-2" style="background-image:url({{asset('theme/images/background/bg11.jpg')}}); background-repeat:no-repeat; background-position:right center;">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12 m-b30 our-story-thum wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6 m-b30 our-story-thum wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                 <img style="max-width:500px; border:2px solid #9a9a9a;" src="{{asset('uploads/our-project-areas-in-somalia.png')}}" class="radius-sm" alt="">
             </div>
 
@@ -9,8 +9,10 @@
                 <div class="about-content wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="section-head style2">
                         <h2 class="title">Our Project Areas</h2>
-                        <p class="m-b10">Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus malesuada </p>
-                        <p class="m-b10">Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus malesuada </p>
+                        <p class="m-b10">As one of the largest Engineering rm in Somalia, we aim to set a standard of excellence, o ering proven capabilities
+                            in all areas of infrastructure design, development and management. Our responsive communication and commitment
+                            to personal service has fostered our ability to maintain an ever-increasing list of repeat clients </p>
+                        <p class="m-b10"> We have worked in various areas within in the republic of Somalia </p>
                     </div>
                     
                     <div class="">
