@@ -70,12 +70,18 @@
 					<div class="col-lg-6">
 						<div class="row">
                             @if($item->video == null or $item->video == "0")
+								@if($item->image_one == null or $item->image_one == 0)
 
+								@else 
+								<div class="col-lg-12 m-b30">
+									<img alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}">
+								</div>
+								@endif
 							@else
 								{{-- Showreel --}}
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media dlab-img-overlay1 dlab-img-effect ">
-										<a href="portfolio-details.html"> <img src="{{asset('theme/images/portfolio/image_6.jpg')}}" alt=""> </a>
+										<a href="portfolio-details.html"> <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt=""> </a>
 										<div class="overlay-bx">
 											<div class="overlay-icon">
 												<div class="text-white">
@@ -86,15 +92,10 @@
 									</div>
 								</div>
 								{{-- Showreel --}}
+								
 							@endif
 						
-							@if($item->image_one == null or $item->image_one == 0)
-
-							@else 
-							<div class="col-lg-12 m-b30">
-								<img alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}">
-							</div>
-							@endif
+							
 							
 							@if($item->image_two == null or $item->image_two == 0)
 
