@@ -87,7 +87,7 @@
 								</div>
 								{{-- Showreel --}}
 							@endif
-
+						
 							@if($item->image_one == null or $item->image_one == 0)
 
 							@else 
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 		<!-- Portfolio Details End -->
-			@include('front.home.pretty')
+		@include('front.home.pretty')
 
 </div>
 <!-- contact area END -->

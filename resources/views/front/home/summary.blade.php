@@ -51,7 +51,7 @@
         {{--  --}}
         <br><br>
         <center>
-            <a download="" href="{{url('/')}}/portfolios" class="site-button
+            <a  href="{{url('/')}}/portfolios" class="site-button
             btnhover20"><i class="fa fa-suitcase"></i> &nbsp; All Projects</a>
         </center>
         {{--  --}}

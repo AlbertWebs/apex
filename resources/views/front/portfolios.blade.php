@@ -89,7 +89,7 @@
                         {{--  --}}
                         <br><br>
                         <center>
-                            <a download="" href="{{url('/')}}/portfolios" class="site-button
+                            <a  href="{{url('/')}}/portfolios" class="site-button
                             btnhover20"><i class="fa fa-image"></i> &nbsp; Our Gallery </a>
                         </center>
                         {{--  --}}
