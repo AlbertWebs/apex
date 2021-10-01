@@ -1,4 +1,4 @@
-<div class="section-full text-white bg-img-fix content-inner overlay-black-dark counter-staus-box" style="background-image:url({{asset('theme/images/background/bg4.jpg')}});">
+<div class="section-full text-white bg-img-fix content-inner overlay-black-dark counter-staus-box" style="background-image:url('{{url('/')}}/uploads/banners/image-044.jpg'); background-position:center center">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
