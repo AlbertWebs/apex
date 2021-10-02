@@ -288,6 +288,13 @@
 											<button name="submit" value="Submit" type="submit" class="site-button radius-no">SEND</button>
 										</span> 
 									</div>
+									<br>
+									{{-- Capture --}}
+									<div class="col-lg-12 col-md-12" id="TheCapcha">
+										<div class="g-recaptcha" data-sitekey="6LcWh6McAAAAAI_oVHiM3bSfV06hbomYT47J2XUA" data-callback="correctCaptcha"></div>
+										<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+									</div>
+									{{-- Capture --}}
 								</form>
 							</div>
 						</div>
@@ -362,6 +369,17 @@
 	   $('.lazy').Lazy();
 	});	/*ready*/
  </script>
+
+<script>
+	$("form").each(function() {
+		$(this).find(':input[type="submit"]').prop('disabled', true);
+	});
+	function correctCaptcha() {
+		$("form").each(function() {
+			$(this).find(':input[type="submit"]').prop('disabled', false);
+		});
+	}
+</script>
 </body>
 @endforeach
 </html>

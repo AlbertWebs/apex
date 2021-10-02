@@ -19,6 +19,9 @@
                         <a target="new" href="https://datawrapper.dwcdn.net/0QISz/1/" class="site-button btnhover20"><i class="fa fa-map-marker"></i> &nbsp; View Project Areas</a>
 
                         <a target="new" href="{{url('/')}}/portfolios" class="site-button btnhover20"><i class="fa fa-suitcase"></i> &nbsp; View Projects</a>
+
+                        <a download="{{url('/')}}/uploads/APEXcompanyprofile.pdf" href="{{url('/')}}/uploads/APEXcompanyprofile.pdf" class="site-button btnhover20"><i class="fa fa-download"></i> &nbsp; Download Profile </a>
+                    
                     </div>
                 </div>
             </div>

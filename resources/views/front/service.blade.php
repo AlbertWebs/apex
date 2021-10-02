@@ -57,16 +57,11 @@
                                     </div>
                                     <div class="widget">
                                         <div class="download-file">
-                                            <h4 class="title">Get your brochures</h4>
+                                            <h4 class="title">Company Profile</h4>
                                             <ul>
+                                              
                                                 <li>
-                                                    <a href="javascript:void(0);" target="_blank">
-                                                        <div class="text">Service Brochure</div>
-                                                        <i class="fa fa-download"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" target="_blank">
+                                                    <a href="{{url('/')}}/uploads/APEXcompanyprofile.pdf" target="_blank">
                                                         <div class="text">Company Profile</div>
                                                         <i class="fa fa-download"></i>
                                                     </a>

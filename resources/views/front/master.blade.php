@@ -44,6 +44,9 @@
 	 {!! html_entity_decode($Settings->tawkTo, ENT_QUOTES, 'UTF-8') !!}
 	
 	<!--End of Tawk.to Script-->
+
+	{{--  --}}
+	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/279dc98707b286f6be9935bcb/a34b864e9e65112b650496752.js");</script>
 	{{--  --}}
 </head>
 <body id="bg">
@@ -62,7 +65,7 @@
 						</ul>
 					</div>
 					<div class="dlab-topbar-right">
-						<a download href="#" class="site-button radius-no btnhover11"><i class="ti-download"></i> &nbsp; Company Profile</a>						
+						<a download href="{{url('/')}}/uploads/APEXcompanyprofile.pdf" class="site-button radius-no btnhover11"><i class="ti-download"></i> &nbsp; Company Profile</a>						
 					</div>
 				</div>
 			</div>
@@ -334,6 +337,13 @@
 											<button name="submit" value="Submit" type="submit" class="site-button radius-no">SEND</button>
 										</span> 
 									</div>
+									<br>
+									{{-- Capture --}}
+									<div class="col-lg-12 col-md-12" id="TheCapcha">
+										<div class="g-recaptcha" data-sitekey="6LcWh6McAAAAAI_oVHiM3bSfV06hbomYT47J2XUA" data-callback="correctCaptcha"></div>
+										<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+									</div>
+									{{-- Capture --}}
 								</form>
 							</div>
 						</div>
@@ -408,6 +418,17 @@
 	   $('.lazy').Lazy();
 	});	/*ready*/
  </script>
+<script>
+	$("form").each(function() {
+		$(this).find(':input[type="submit"]').prop('disabled', true);
+	});
+	function correctCaptcha() {
+		$("form").each(function() {
+			$(this).find(':input[type="submit"]').prop('disabled', false);
+		});
+	}
+</script>
+
 </body>
 @endforeach
 </html>
