@@ -59,6 +59,25 @@
                                     <label for="list-title">User Email</label>
                                 </div>
                                 <div class="input-field col s12">
+                                    <input autocomplete="off" name="position" value="{{$User->position}}"  id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">User Position</label>
+                                </div>
+                                {{--  --}}
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="facebook" value="{{$User->facebook}}"  id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">User facebook</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="instagram" value="{{$User->instagram}}"  id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">User instagram</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="linkedin" value="{{$User->linkedin}}"  id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">User linkedin</label>
+                                </div>
+
+                                  
+                                <div class="input-field col s12">
                                     <input autocomplete="off" name="mobile" value="{{$User->mobile}}" id="list-title" type="text" class="validate" required>
                                     <label for="list-title">User Mobile Number</label>
                                 </div>

@@ -621,7 +621,11 @@ class AdminsController extends Controller
             }
         $updateDetails = array(
             'name'=>$request->name,
+            'position'=>$request->position,
             'email'=>$request->email,
+            'facebook'=>$request->facebook,
+            'instagram'=>$request->instagram,
+            'linkedin'=>$request->linkedin, 
             'mobile'=>$request->mobile,
             'address'=>$request->address,
             'image'=>$image

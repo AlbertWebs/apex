@@ -3,85 +3,31 @@
     <div class="container">	
         <div class="section-head text-black text-center">
             <h2 class="title">Meet The Team</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+            <p>Our exceptional team skills and dynamic personalities have enabled us to thrive for nearly 6 years. Our team includes licensed Professional Engineers, Professional Land Surveyors, technicians, field crews, and support staff.</p>
         </div>
         <div class="row">
+            <?php $User = DB::table('users')->where('is_admin','0')->get(); ?>
+            @foreach ($User as $item)
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="dlab-box m-b30 dlab-team1">
                     <div class="dlab-media">
                         <a href="javascript:;">
-                            <img width="358" height="460" alt="" src="{{asset('theme/images/our-team/pic1.jpg')}}">
+                            <img width="358" height="460" alt="" src="{{url('/')}}/uploads/users/{{$item->image}}">
                         </a>
                     </div>
                     <div class="dlab-info">
-                        <h4 class="dlab-title"><a href="javascript:;">Nashid Martines</a></h4>
-                        <span class="dlab-position">Director</span>
+                        <h4 class="dlab-title"><a href="javascript:;">{{$item->name}}</a></h4>
+                        <span class="dlab-position">{{$item->position}}</span>
                         <ul class="dlab-social-icon dez-border">
-                            <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-linkedin" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-pinterest" href="javascript:void(0);"></a></li>
+                            <li><a class="fa fa-facebook" href="{{$item->facebook}}"></a></li>
+                            <li><a class="fa fa-instagram" href="{{$item->instagram}}"></a></li>
+                            <li><a class="fa fa-linkedin" href="{{$item->linkedin}}"></a></li>
+                           
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="dlab-box m-b30 dlab-team1">
-                    <div class="dlab-media">
-                        <a href="javascript:;">
-                            <img width="358" height="460" alt="" src="{{asset('theme/images/our-team/pic2.jpg')}}">
-                        </a>
-                    </div>
-                    <div class="dlab-info">
-                        <h4 class="dlab-title"><a href="javascript:;">Konne Backfield</a></h4>
-                        <span class="dlab-position">Designer</span>
-                        <ul class="dlab-social-icon dez-border">
-                            <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-linkedin" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-pinterest" href="javascript:void(0);"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="dlab-box m-b30 dlab-team1">
-                    <div class="dlab-media">
-                        <a href="javascript:;">
-                            <img width="358" height="460" alt="" src="{{asset('theme/images/our-team/pic3.jpg')}}">
-                        </a>
-                    </div>
-                    <div class="dlab-info">
-                        <h4 class="dlab-title"><a href="javascript:;">Hackson Willingham</a></h4>
-                        <span class="dlab-position">Developer</span>
-                        <ul class="dlab-social-icon dez-border">
-                            <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-linkedin" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-pinterest" href="javascript:void(0);"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="dlab-box m-b30 dlab-team1">
-                    <div class="dlab-media">
-                        <a href="javascript:;">
-                            <img width="358" height="460" alt="" src="{{asset('theme/images/our-team/pic4.jpg')}}">
-                        </a>
-                    </div>
-                    <div class="dlab-info">
-                        <h4 class="dlab-title"><a href="javascript:;">Konne Backfield</a></h4>
-                        <span class="dlab-position">Manager</span>
-                        <ul class="dlab-social-icon dez-border">
-                            <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-linkedin" href="javascript:void(0);"></a></li>
-                            <li><a class="fa fa-pinterest" href="javascript:void(0);"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
