@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateClientsTable extends Migration
+class CreateCopyrightTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('clients', function (Blueprint $table) {
-            $table->id();
-            $table->string('title')->nullable();
-            $table->string('link')->nullable();
-            $table->string('image')->nullable();
-            $table->string('type')->nullable();
+        Schema::create('copyright', function (Blueprint $table) {
+            $table->unsignedBigInteger('id')->primary();
+            $table->text('content')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateClientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('copyright');
     }
 }
