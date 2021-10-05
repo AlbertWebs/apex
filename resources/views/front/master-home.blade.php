@@ -251,11 +251,11 @@
 								</ul>
 							</div>
 							<ul class="list-inline m-a0">
-								<li><a href="javascript:void(0);" class="site-button-link facebook button-md"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button-link google-plus button-md"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button-link linkedin button-md"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button-link instagram button-md"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="javascript:void(0);" class="site-button-link twitter button-md"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="{{$Settings->facebook}}" class="site-button-link facebook button-md"><i class="fa fa-facebook"></i></a></li>
+								{{-- <li><a href="{{$Settings->email}}" class="site-button-link google-plus button-md"><i class="fa fa-google-plus"></i></a></li> --}}
+								<li><a href="{{$Settings->linkedin}}" class="site-button-link linkedin button-md"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="{{$Settings->instagram}}" class="site-button-link instagram button-md"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="{{$Settings->twitter}}" class="site-button-link twitter button-md"><i class="fa fa-twitter"></i></a></li>
 							</ul>
                         </div>
                     </div>

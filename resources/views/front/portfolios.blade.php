@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="col-lg-12 text-center">
                                     <div class="site-filters m-b20 filters2">
-                                        <ul class="filters" data-toggle="buttons">
+                                        {{-- <ul class="filters" data-toggle="buttons">
                                             <?php $Labels = DB::table('categories')->distinct()->get(['labels']); $Count = 1; ?>
                                             @foreach ($Labels as $item)
                                             @if($Count == 1)
@@ -56,7 +56,7 @@
                                             @endif
                                             <?php $Count = $Count+1 ?>
                                             @endforeach
-                                        </ul>
+                                        </ul> --}}
                                     </div>
                                 </div>
                             </div>

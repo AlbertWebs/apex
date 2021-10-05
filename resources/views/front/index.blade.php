@@ -21,7 +21,7 @@
     @include('front.home.pretty')
 
     {{-- Testimonials --}}
-    @include('front.home.testimonials')
+    {{-- @include('front.home.testimonials') --}}
    
     {{-- Call To Action --}}
     @include('front.home.call-to-action-one')
