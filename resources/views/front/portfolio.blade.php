@@ -28,9 +28,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 m-b30">
-						<h2 class="text-black font-weight-600 m-b15">Project Information</h2>
-						{{-- Content --}}
-						{!! html_entity_decode($item->content, ENT_QUOTES, 'UTF-8') !!}
+						<h2 class="text-black font-weight-600 m-b15">Scope Of Work</h2>
+						<p>{!! html_entity_decode($item->scope, ENT_QUOTES, 'UTF-8') !!}</p>
 						{{-- Content --}}
 						<div class="row widget widget_getintuch widget_getintuch-pro-details m-lr0">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-lr0">
@@ -54,7 +53,7 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-lr0">
 								<div class="pro-details">
 									<i class="fa fa-calendar"></i>
-									<strong>Date</strong>1st May 2020 -June 2021
+									<strong>Date</strong>{{$item->completion}}
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 p-lr0">
@@ -64,8 +63,7 @@
 								</div>
 							</div>
 						</div>
-						<h2 class="text-black font-weight-600 m-b15">Scope Of Work</h2>
-						<p>{!! html_entity_decode($item->scope, ENT_QUOTES, 'UTF-8') !!}</p>
+						
 					</div>
 					<div class="col-lg-6">
 						<div class="row">

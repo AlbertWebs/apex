@@ -49,6 +49,11 @@
                                     <h2 class="title text-black">{!! html_entity_decode($content->title, ENT_QUOTES, 'UTF-8') !!}</h2>
                                     <p> {!! html_entity_decode($content->meta, ENT_QUOTES, 'UTF-8') !!}</p>
                                     <a href="{{url('/')}}/services/{{$content->slung}}" class="site-button outline outline-2">Read More</a>
+                                    @if($content->profile == null)
+
+                                    @else 
+                                    <a download href="{{url('/')}}/uploads/categories/{{$content->profile}}" class="site-button radius-no btnhover11">Download Profile</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -59,6 +64,11 @@
                                     <h2 class="title text-black">	 {!! html_entity_decode($content->title, ENT_QUOTES, 'UTF-8') !!}</h2>
                                     <p> {!! html_entity_decode($content->meta, ENT_QUOTES, 'UTF-8') !!}</p>
                                     <a href="{{url('/')}}/services/{{$content->slung}}" class="site-button outline outline-2">Read More</a>
+                                    @if($content->profile == null)
+
+                                    @else 
+                                    <a download href="{{url('/')}}/uploads/categories/{{$content->profile}}" class="site-button radius-no btnhover11"><i class="ti-download"></i> Download Profile</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>

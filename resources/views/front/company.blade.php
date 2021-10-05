@@ -31,7 +31,7 @@
 
     @include('front.home.milestones')
 
-    @include('front.about.team')
+    {{-- @include('front.about.team') --}}
    
 
     

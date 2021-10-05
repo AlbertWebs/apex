@@ -66,6 +66,14 @@
                                                         <i class="fa fa-download"></i>
                                                     </a>
                                                 </li>
+
+                                                @if($Service->profile == null)
+
+                                                @else 
+                                                <li>
+                                                   <a download href="{{url('/')}}/uploads/categories/{{$Service->profile}}" class="site-button radius-no btnhover11"><i class="ti-download"></i> Download Profile</a>
+                                                </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>

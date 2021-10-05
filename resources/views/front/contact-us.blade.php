@@ -35,7 +35,7 @@
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-tb0 dlab-tilte">Address:</h6>
                                         <p>{{$Con->address}}</p>
-                                        <p>{{$Con->location}}</p>
+                                        {{-- <p>{{$Con->location}}</p> --}}
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
@@ -49,7 +49,9 @@
                                     <div class="icon-bx-xs border-1"> <a href="tel:{{$Con->mobile_one}}" class="icon-cell"><i class="ti-mobile"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-tb0 dlab-tilte">PHONE</h6>
-                                        <p>{{$Con->mobile_one}}<br>{{$Con->mobile_two}}</p>
+                                        <p>{{$Con->mobile_one}}<br>
+                                            {{-- {{$Con->mobile_two}} --}}
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -119,7 +121,7 @@
                     <!-- Left part END -->
 					<div class="col-lg-8 d-flex m-b30">
 						{{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" class="align-self-stretch radius-sm" style="border:0; width:100%; min-height:100%;" allowfullscreen></iframe> --}}
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.277444357953!2d36.8222756!3d-1.2821653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1631791892779!5m2!1sen!2ske" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.332910006001!2d45.296995014754934!3d2.0224726985256205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d586bbe3e34ef31%3A0xb42174e54bd0a472!2sApex%20Engineering%20Ltd!5e0!3m2!1sen!2ske!4v1633433997603!5m2!1sen!2ske" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
                     
                 </div>

@@ -29,7 +29,7 @@
                                 data-paddingleft="[0,0,0,0]" 
                                 style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)"> </div>
                                     <!-- BACKGROUND VIDEO LAYER -->
-                            <div class="rs-background-video-layer overlay-black-dark" 
+                            <div class="rs-background-video-layer" 
                                 data-forcerewind="on" 
                                 data-volume="mute" 
                                 data-videowidth="100%" 
@@ -64,7 +64,7 @@
                                 data-paddingbottom="[0,0,0,0]"
                                 data-paddingleft="[0,0,0,0]"
 
-                                style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">Parliament of Hirshabelle <br> State of Somalia 
+                                style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">
                             </div>
                         </li>
                     </ul>

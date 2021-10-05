@@ -294,7 +294,7 @@
 							<p>Apex Engineering Limited</p>
 							<div class="widget widget_getintuch">
 								<ul>
-									<li><i class="ti-location-pin"></i> {{$Settings->location}}<hr>{{$Settings->address}} <hr></li>
+									<li><i class="ti-location-pin"></i>{{$Settings->address}} <hr></li>
 									<li><i class="ti-mobile"></i> {{$Settings->mobile_one}} (24/7 Support Line)</li>
 									<li><i class="ti-email"></i> {{$Settings->email}}</li>
 								</ul>

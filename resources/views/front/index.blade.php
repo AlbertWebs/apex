@@ -39,7 +39,7 @@
     @include('front.home.latest-blog')
 
 	<!-- Clients -->
-    @include('front.home.clients')
+    {{-- @include('front.home.clients') --}}
   
 </div>
 <!-- Content END -->

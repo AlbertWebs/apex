@@ -214,7 +214,7 @@
                                                     {{--  --}}
                                                     <div class="dlab-divider divider-4px  bg-black"><i class="icon-dot c-square"></i></div>
                                                     <div class="sort-title clearfix text-center text-black">
-                                                        <h4> SELECTED PAST EXPERIENCE IN TECHNICAL ENIGNEERING SUPERVISION in SOMALIA</h4>
+                                                        <h4> SELECTED PAST EXPERIENCE IN GEO-TECHNICAL ENIGNEERING SUPERVISION in SOMALIA</h4>
                                                     </div>
                                                     <table  class="table check-tbl list-star reverse list-box ">
                                                         <tbody>
@@ -287,6 +287,386 @@
                                                         <td width="189">Jan 2016-May 2017</td>
                                                         </tr>
                                                         </tbody>
+                                                    </table>
+                                                    {{--  --}}
+                                                    <div class="dlab-divider divider-4px  bg-black"><i class="icon-dot c-square"></i></div>
+                                                    <div class="sort-title clearfix text-center text-black">
+                                                        <h4> URBAN PLANNING & ENVIRONMENTAL  PROJECTS UNDERTAKEN</h4>
+                                                    </div>
+                                                    <table  class="table check-tbl list-star reverse list-box ">
+                                                      
+                                                
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="246">
+                                                                Name
+                                                                of project</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in"><p class="western" align="center">
+                                                                Client</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                Period
+                                                                of activity</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="33" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                Environmental
+                                                                Safeguards and Institutional Capacity Assessment for the Somalia
+                                                                Urban Resilience Project Phase 2 (SURP II) Project in Baidoa
+                                                                Municipality and Kismayu Municipality, Somalia,</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                The
+                                                                World Bank</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2019-2020</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="33" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                Galmudug State Offices and Ministerial Offices
+                                                                in Dhusamareeb</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                <span lang="en-KE">Adam
+                                                                Smith International (Somali Stability Fund)</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2019-2020</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="52" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                Conference
+                                                                Hall &amp; State Offices Re</span><font color="#000000"><font face="Garamond, serif">ception
+                                                                in Garowe, Puntland State Offices</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                <span lang="en-KE">Adam
+                                                                Smith International (Somali Stability Fund)</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2019-2020</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="41" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                6 KM tarmacked road with 2 bridges in Beletweyne</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                <span lang="en-KE">Adam
+                                                                Smith International (Somali Stability Fund)</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2019-2020</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the rehabilitation
+                                                                of airstrip in Diinsoor</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                May
+                                                                17-Apr 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                construction
+                                                                of 2KM gravel road</span>
+                                                                with 2 culvert bridges
+                                                                in Diinsoor</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                May
+                                                                17-Apr 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                of
+                                                                Stadium</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                May
+                                                                17-Apr 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the Installation
+                                                                of Street lights in 8 Locations of Puntland State</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                Puntland
+                                                                State and Somali Stability Fund</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                Jun
+                                                                18- Aug 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                Women Center</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                May
+                                                                17-Apr 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                of Beerta Banadir Park in Mogadishu</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                Gulgar
+                                                                Group Ltd</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                Oct
+                                                                17- June 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="59" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP, Geotechnical
+                                                                &amp; Topographical Survey for the Baraawe Airport</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                <span lang="en-KE">Adam
+                                                                Smith International (Somali Stability Fund)</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                Dec
+                                                                17-Jan 18</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="59" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and development of EMMP for the construction of
+                                                                Ministry Offices </span><font color="#000000"><font face="Garamond, serif">and
+                                                                Youth Center in
+                                                                Kismayu</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                <span lang="en-KE">Adam
+                                                                Smith International (Somali Stability Fund)</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                <span lang="en-KE">2017-2018</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="54" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Environmental
+                                                                Impact Assessment and the development of a Strategic
+                                                                Municipal Solid Waste Management Plan for Belet Hawa Town</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                German
+                                                                Humanitarian Support/ASEP/ARCHNOVA</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2016</span></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="54" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                Social
+                                                                economic impact assessment forth construction of 6KM road in
+                                                                Kismayu</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</span></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                Oct
+                                                                2016</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="53" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" style="margin-bottom: 0in">
+                                                                Development
+                                                                of environmental and urban sector policies and strategies for
+                                                                urban development in Mogadishu, Hargeisa and Garowe
+                                                                Municipalities in consultation and in coordination with relevant
+                                                                government agencies and donor organizations.</p>
+                                                                <p class="western">Developed
+                                                                Solid Waste Management Plan, Biomedical Waste Management Plans. 
+                                                                </p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding: 0in"><p class="western" align="center">
+                                                                UNHABITAT</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2015-2016</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    {{--  --}}
+                                                    <div class="sort-title clearfix text-center text-black">
+                                                        <h4> DISTRICTS/MUNICIPALITIES NEEDS ASSESSMENT PROJECTS UNDERTAKEN</h4>
+                                                    </div>
+                                                    {{--  --}}
+                                                    <table  class="table check-tbl list-star reverse list-box ">
+                                                      
+                                                
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="3" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                               <b>Name
+                                                                of project</b></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: none; border-right: none; padding: 0in"><p class="western" align="center">
+                                                               <b>Client</b></p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                               <b>Period
+                                                                of activity</b></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="33" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in
+                                                                Baardheere District , Gedo Region</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2016</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="33" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in Diinsoor
+                                                                District, South West Region</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                                AECOM/ TIS+</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2016</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="52" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                <span lang="en-KE">Assessment
+                                                                of institutional/policy frameworks onenvironmental
+                                                                management practices for Bosaso District,Puntland.</span></p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                UNHABITAT</p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2016</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="41" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in Matabaan
+                                                                District, South West Region</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                               </p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2015</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in
+                                                                Garbahareey District, Gedo Region. 
+                                                                </p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                               </p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2015</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="37" style="background: transparent" style="border-top: none; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in Hudur
+                                                                District, South West Region.</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                               </p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: none; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2015</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
+                                                            <td width="476" height="36" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western">
+                                                                District
+                                                                Stabilization Needs Assessment and the Facilitation of Consensus
+                                                                Building workshop to Prioritize USAID funded projects in Bardaale
+                                                                District, South West Region.</p>
+                                                            </td>
+                                                            <td width="260" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding: 0in"><p class="western" align="center">
+                                                                USAID/
+                                                               </p>
+                                                            </td>
+                                                            <td width="155" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0in; padding-left: 0in; padding-right: 0.08in"><p class="western" align="center">
+                                                                2015</p>
+                                                            </td>
+                                                        </tr>
                                                     </table>
                                                     {{--  --}}
                                                 </div>
