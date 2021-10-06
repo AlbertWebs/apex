@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.master-portfolio')
 @section('content')
 @foreach ($Portfolio as $item)
 	  <!-- Content -->
@@ -135,6 +135,57 @@
 			</div>
 		</div>
 		<!-- Portfolio Details End -->
+		<?php $Gallery = DB::table('galleries')->where('portfolio_id',$item->id)->get(); ?>
+		@if($Gallery->isEmpty())
+
+		@else
+		{{--  --}}
+		<div class="bg-white lightgallery gallery-filters" id="lightgallery">
+			<div class="section-full bg-gray content-inner-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h3 class="m-t0 m-b20">Portfolio Gallery</h3>
+							<div class="site-filters clearfix m-b20">
+								<ul class="filters11" data-toggle="buttons">
+									<?php $Cases = DB::table('cases')->where('id',$item->id)->get(); $counter = 1; ?>
+									@foreach($Cases as $case)
+									@If($counter == 1)
+									<li data-filter="" class="btn active"><input type="radio"><a href="javascript:void(0);" class="site-button outline outline-2"><span>All</span></a></li>
+									<li data-filter="portfolio_{{$case->id}}" class="btn"><input type="radio"><a href="javascript:void(0);" class="site-button outline outline-2"><span><small>{{$case->title}}</small></span></a></li>
+									@else
+									<li data-filter="portfolio_{{$case->id}}" class="btn"><input type="radio"><a href="javascript:void(0);" class="site-button outline outline-2"><span><small>{{$case->title}}</small></span></a></li>
+									@endif
+									<?php $counter = $counter+1; ?>
+									@endforeach
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix">
+						<ul id="masonry11" class="dlab-gallery-listing gallery-grid-4 gallery mfp-gallery text-center sp10">
+							<?php $Galleries = DB::table('galleries')->where('portfolio_id',$item->id)->get(); ?>
+							@foreach($Galleries as $Gallery)
+							<li class="card-container m-b10 col-lg-4 portfolio_{{$Gallery->portfolio_id}}">
+								<div class="dlab-media dlab-img-overlay1 dlab-img-effect">
+									<img src="{{url('/')}}/uploads/gallery/{{$Gallery->image}}"  alt="" width="800" height="650"/>
+									<div class="overlay-bx">
+										<div class="overlay-icon"> 
+											<span data-exthumbimage="{{url('/')}}/uploads/gallery/{{$Gallery->image}}" data-src="{{url('/')}}/uploads/gallery/{{$Gallery->image}}" class="check-km" title="Apex Engineering Limited Somalia">		
+												<i class="ti-zoom-in icon-bx-xs"></i> 
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							@endforeach
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{--  --}}
+		@endif
 		@include('front.home.pretty')
 
 </div>

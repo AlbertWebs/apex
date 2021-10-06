@@ -171,6 +171,14 @@ Route::post('admin/edit_CaseStudies/{id}',[AdminsController::class,'edit_CaseStu
 Route::get('admin/addCaseStudy', [AdminsController::class,'addCaseStudy'])->middleware('is_admin');
 Route::post('admin/add_CaseStudy', [AdminsController::class, 'add_CaseStudy'])->middleware('is_admin');
 
+// Gallery
+Route::get('admin/galleries',[AdminsController::class,'galleries'])->middleware('is_admin');
+Route::get('admin/editGallery/{id}',[AdminsController::class,'editGallery'])->middleware('is_admin');
+Route::get('admin/deleteGallery/{id}',[AdminsController::class,'deleteGallery'])->middleware('is_admin');
+Route::post('admin/edit_Gallery/{id}',[AdminsController::class,'edit_Gallery'])->middleware('is_admin');
+Route::get('admin/addGallery', [AdminsController::class,'addGallery'])->middleware('is_admin');
+Route::post('admin/add_Gallery', [AdminsController::class, 'add_Gallery'])->middleware('is_admin');
+
 // Payments
 Route::get('admin/b2b', [AdminsController::class, 'b2b'])->middleware('is_admin');
 Route::get('admin/b2c', [AdminsController::class, 'b2c'])->middleware('is_admin');

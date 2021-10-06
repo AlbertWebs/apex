@@ -44,6 +44,10 @@ use App\Models\SendMails;
 
 use App\Models\Client;
 
+use App\Models\Gallery;
+
+
+
 use Illuminate\Http\Request;
 
 // use Request;
@@ -2441,6 +2445,107 @@ public function deleteCaseStudies($id){
    
     return Redirect::back();
 }
+
+// 
+    // Case Study
+    public function addGallery(){
+        $page_title = 'formfiletext';//For Layout Inheritance
+        $page_name = 'add Gallery Study';
+        return view('admin.addGallery',compact('page_title','page_name'));
+    }
+    
+    public function add_Gallery(Request $request){
+    
+        $path = 'uploads/gallery';
+        if(isset($request->image_one)){
+            $fileSize = $request->file('image_one')->getSize();
+                if($fileSize>=2000000){
+                Session::flash('message', "File Exceeded the maximum allowed Size");
+                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+                return Redirect::back();
+                }else{
+                
+                $file = $request->file('image_one');
+                $filename = str_replace(' ', '', $file->getClientOriginalName());
+                $timestamp = new Datetime();
+                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $image_main_temp = $new_timestamp.'image'.$filename;
+                $image_one = str_replace(' ', '',$image_main_temp);
+                $file->move($path, $image_one);
+                }
+        }else{
+            $image_one = $request->pro_img_cheat;
+        }
+  
+        
+    
+      
+      
+        $Portfolio = new Gallery;
+        $Portfolio->portfolio_id = $request->portfolio_id;
+       
+        $Portfolio->image = $image_one;
+       
+        $Portfolio->save();
+     
+        Session::flash('message', "Case Study Has Been Added");
+        return Redirect::back();
+    }
+    
+    
+    public function galleries(){
+        $Gallery = Gallery::all();
+        $page_title = 'list';
+        $page_name = 'Portfolio';
+        return view('admin.gallery',compact('page_title','Gallery','page_name'));
+    }
+    
+    public function editGallery($id){
+        $Gallery = Gallery::find($id);
+        $page_title = 'formfiletext';
+        $page_name = 'Edit Case Study';
+        return view('admin.editGallery',compact('page_title','Gallery','page_name'));
+    }
+    
+    
+    public function edit_Gallery(Request $request, $id){
+        $path = 'uploads/gallery';
+        if(isset($request->image_one)){
+            $fileSize = $request->file('image_one')->getSize();
+                if($fileSize>=200000000){
+                Session::flash('message', "File Exceeded the maximum allowed Size");
+                Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
+                return Redirect::back();
+                }else{
+                
+                $file = $request->file('image_one');
+                $filename = str_replace(' ', '', $file->getClientOriginalName());
+                $timestamp = new Datetime();
+                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $image_main_temp = $new_timestamp.'image'.$filename;
+                $image_one = str_replace(' ', '',$image_main_temp);
+                $file->move($path, $image_one);
+                }
+        }else{
+            $image_one = $request->image_one_cheat;
+        }
+    
+
+        $updateDetails = array(
+            'portfolio_id' => $request->portfolio_id,
+            'image' =>$image_one,
+        );
+        DB::table('galleries')->where('id',$id)->update($updateDetails);
+        Session::flash('message', "Changes have been saved");
+        return Redirect::back();
+    }
+    
+    public function deleteGallery($id){
+        DB::table('galleries')->where('id',$id)->delete();
+       
+        return Redirect::back();
+    }
+// 
     
 }
 
