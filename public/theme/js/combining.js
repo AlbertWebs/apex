@@ -856,8 +856,9 @@ $("#gmap_canvas").length > 1 && google.maps.event.addDomListener(window, "load",
 
 // 
 $(".theProfile").click(function (stay) {
-    stay.preventDefault()
+    stay.preventDefault();
     if(document.getElementById('newsletter-popup-form')) {
+        $('.loading-imagers').hide();
         setTimeout(function() {
             var mpInstance = $.magnificPopup.instance;
             if (mpInstance.isOpen) {

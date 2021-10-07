@@ -1,14 +1,13 @@
 <script>
     $( document ).ready(function() {
-        $('.loading-imagers').hide();
+        
         $('#profiles').hide();
         
     });
     $("#newsletter-popup").submit(function(stay){
-        stay.preventDefault()
+        stay.preventDefault();
         //var formdata = $(this).serialize(); // here $(this) refere to the form its submitting
         $('.loading-imagers').show();
-    
         var formdata = $(this).serialize();
         $.ajax({
             async: false,
@@ -17,17 +16,22 @@
             data: formdata, // here $(this) refers to the ajax object not form
             success: function (results) {
                 
-                $('#newsletter-span').html('Successful!')
-                $( "#profiles" ).show( "slow", function() {
+                $('#newsletter-span').html('Successful!');
+                
+                $("#profiles").show("slow",function(){
                     // Animation complete.
                 });
-                $( ".loading-imagers" ).hide( "slow", function() {
+                $(".loading-imagers").hide("slow",function(){
                     // Animation complete.
                 });
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+              result = false;
             }
         });
     });
 </script>
+
 <script>
 	$("form").each(function() {
 		$(this).find(':input[type="submit"]').prop('disabled', true);
