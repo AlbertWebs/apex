@@ -16,7 +16,7 @@
             url: "{{url('/')}}/news-letters",
             data: formdata, // here $(this) refers to the ajax object not form
             success: function (results) {
-                alert('d')
+                
                 $('#newsletter-span').html('Successful!')
                 $( "#profiles" ).show( "slow", function() {
                     // Animation complete.
