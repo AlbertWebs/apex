@@ -13,7 +13,7 @@
                         @endforeach
                         {{--  --}}
                         <br><br>
-                        <a download href="#" class="site-button black btnhover20"><i class="ti-download"></i> Company Profile</a>
+                        <a href="#" class="site-button black btnhover20 theProfile"><i class="ti-download"></i> Company Profile</a>
                                     
                     </div>
                 </div>
