@@ -65,7 +65,7 @@
 						</ul>
 					</div>
 					<div class="dlab-topbar-right">
-						<a download href="{{url('/')}}/uploads/APEXcompanyprofile.pdf" class="site-button radius-no btnhover11"><i class="ti-download"></i> &nbsp; Company Profile</a>						
+						<a href="#" class="site-button radius-no btnhover11 theProfile"><i class="ti-download"></i> &nbsp; Company Profile</a>							
 					</div>
 				</div>
 			</div>
@@ -388,6 +388,8 @@
         </div>
 		<!-- Footer Top End -->
     </footer>
+	{{-- NewsForm --}}
+	@include('front.newsForm')
     <!-- Footer End -->
     <button class="scroltop style1 radius" type="button"><i class="fa fa-arrow-up"></i></button>
 </div>
@@ -395,20 +397,11 @@
  <script src="{{asset('theme/js/combining.js')}}"></script>
 
 
-<script>
-	$("form").each(function() {
-		$(this).find(':input[type="submit"]').prop('disabled', true);
-	});
-	function correctCaptcha() {
-		$("form").each(function() {
-			$(this).find(':input[type="submit"]').prop('disabled', false);
-		});
-	}
-</script>
+
 <script>
 	Industry.handleMasonryFilter();
 </script>
-
+@include('front.newsletter')
 </body>
 @endforeach
 </html>

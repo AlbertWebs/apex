@@ -52,7 +52,7 @@
                                     @if($content->profile == null)
 
                                     @else 
-                                    <a download href="{{url('/')}}/uploads/categories/{{$content->profile}}" class="site-button radius-no btnhover11">Download Profile</a>
+                                    <a href="#" class="site-button radius-no btnhover11 theProfile"><i class="ti-download"></i> Download Profile</a>
                                     @endif
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                     @if($content->profile == null)
 
                                     @else 
-                                    <a download href="{{url('/')}}/uploads/categories/{{$content->profile}}" class="site-button radius-no btnhover11"><i class="ti-download"></i> Download Profile</a>
+                                    <a href="#" class="site-button radius-no btnhover11 theProfile"><i class="ti-download"></i> Download Profile</a>
                                     @endif
                                 </div>
                             </div>

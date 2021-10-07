@@ -342,6 +342,9 @@
     <!-- Footer End -->
     <button class="scroltop style1 radius" type="button"><i class="fa fa-arrow-up"></i></button>
 </div>
+{{-- newsform --}}
+@include('front.newsForm')
+{{--  --}}
 <!-- JAVASCRIPT FILES ========================================= -->
  <script src="{{asset('theme/js/combining.js')}}"></script>
  <!-- CONTACT JS  -->
@@ -370,16 +373,8 @@
 	});	/*ready*/
  </script>
 
-<script>
-	$("form").each(function() {
-		$(this).find(':input[type="submit"]').prop('disabled', true);
-	});
-	function correctCaptcha() {
-		$("form").each(function() {
-			$(this).find(':input[type="submit"]').prop('disabled', false);
-		});
-	}
-</script>
+
+@include('front.newsletter')
 </body>
 @endforeach
 </html>

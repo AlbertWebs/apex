@@ -65,7 +65,7 @@
 						</ul>
 					</div>
 					<div class="dlab-topbar-right">
-						<a download href="{{url('/')}}/uploads/APEXcompanyprofile.pdf" class="site-button radius-no btnhover11"><i class="ti-download"></i> &nbsp; Company Profile</a>						
+						<a href="#" class="site-button radius-no btnhover11 theProfile"><i class="ti-download"></i> &nbsp; Company Profile</a>						
 					</div>
 				</div>
 			</div>
@@ -400,6 +400,8 @@
  <script src="{{asset('theme/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
  <script src="{{asset('theme/js/rev.slider.js')}}"></script>
 
+ @include('front.newsForm')
+
  <!-- Hero Video -->
  <script type="text/javascript" src="{{asset('theme/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
  <script type="text/javascript" src="{{asset('theme/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
@@ -418,20 +420,11 @@
 	   $('.lazy').Lazy();
 	});	/*ready*/
  </script>
-<script>
-	$("form").each(function() {
-		$(this).find(':input[type="submit"]').prop('disabled', true);
-	});
-	function correctCaptcha() {
-		$("form").each(function() {
-			$(this).find(':input[type="submit"]').prop('disabled', false);
-		});
-	}
-</script>
+
 <script>
 	Industry.handleMasonryFilter();
 </script>
-
+@include('front.newsletter')
 </body>
 @endforeach
 </html>
