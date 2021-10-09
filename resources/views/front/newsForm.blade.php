@@ -11,9 +11,9 @@
 						<form action="#" id="newsletter-popup">
 							{{csrf_field()}}
 							<div class="input-group input-group-round">
-								<input type="email" name="user_email" class="form-control form-control-white" placeholder="Your Email Address" aria-label="Email Adress" required>
+								<input type="email" name="user_email" class="form-control form-control-white" placeholder="Your Email Address" aria-label="Email Address" required>
 								<div class="input-group-append">
-									<button class="btn" type="submit"><span>go</span> <img class="loading-imagers" width="22" src="{{url('/')}}/uploads/preloaders/loading.gif" alt="Amani vehicle Sound Loading"></button>
+									<button class="btn" type="submit"><span>go</span> <img class="loading-imagers" width="22" src="{{url('/')}}/uploads/preloaders/loading.gif" alt="Apex Loading Loading"></button>
 								</div><!-- .End .input-group-append -->
 								
 							</div><!-- .End .input-group -->

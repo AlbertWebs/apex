@@ -9,7 +9,7 @@
                 <div class="about-content wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
                     <div class="section-head style2">
                         <h2 class="title">Our Project Areas</h2>
-                        <p class="m-b10">As one of the largest Engineering rm in Somalia, we aim to set a standard of excellence, o ering proven capabilities
+                        <p class="m-b10">As one of the largest Engineering firm in Somalia, we aim to set a standard of excellence, offering proven capabilities
                             in all areas of infrastructure design, development and management. Our responsive communication and commitment
                             to personal service has fostered our ability to maintain an ever-increasing list of repeat clients </p>
                         <p class="m-b10"> We have worked in various areas within in the republic of Somalia </p>
