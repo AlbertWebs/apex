@@ -8,7 +8,7 @@
                         <h2 class="title">Apex Engineering Limited<br/></h2>
                         <h4 class="title">With the best team taking your project, be rest assured that the end product will be world class</h4>
                         <div class="col-lg-12 col-md-12 m-b30 our-story-thum wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-                            <img src="{{asset('uploads/Organization-Structure.png')}}" class="radius-sm" alt="">
+                            <img src="{{asset('uploads/Organization-Structure.jpeg')}}" class="radius-sm" alt="">
                         </div>
                       
                     </div>
