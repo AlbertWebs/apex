@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="{{asset('favicon/apple-icon-180x180.png')}}" />
 <link rel="apple-touch-icon preload" sizes="57x57" href="{{asset('favicon/apple-icon-57x57.png')}}">
 <link rel="apple-touch-icon preload" sizes="60x60" href="{{asset('favicon/apple-icon-60x60.png')}}">
 <link rel="apple-touch-icon preload" sizes="72x72" href="{{asset('favicon/apple-icon-72x72.png')}}">
