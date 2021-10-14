@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-6 m-b30 our-story-thum wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
-                <img style="max-width:100%; border:2px solid #9a9a9a;" src="{{asset('uploads/our-project-areas-in-somalia.png')}}" class="radius-sm" alt="">
+                <img style="max-width:100%; border:2px solid #9a9a9a;" src="{{asset('uploads/our-project-areas-in-somalia.png')}}" class="radius-sm" alt="Apex Engineering Limited">
             </div>
 
             <div class="col-lg-8 col-md-6">

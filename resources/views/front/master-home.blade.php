@@ -59,7 +59,7 @@
             <div class="container clearfix">
                 <!-- website logo -->
                  <div class="logo-header mostion logo-white">
-                    <a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""></a>
+                    <a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt="{{$Settings->sitename}}"></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,7 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""></a>
+                        <a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt="{{$Settings->sitename}}"></a>
                     </div>
                     <ul class="nav navbar-nav">	
                         <li>
@@ -104,21 +104,21 @@
                         </li>
                         {{-- <li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
                             <ul class="mega-menu">
-                                <li><a href="{{url('/')}}"><img src="demo/pic1.jpg')}}" alt=""><span>Home - Default</span></a></li>
-                                <li><a href="index-2.html"><img src="demo/pic2.jpg')}}" alt=""><span>Home - Oil/Gas Plant</span></a></li>
-                                <li><a href="index-3.html"><img src="demo/pic3.jpg')}}" alt=""><span>Home - Steel Plant</span></a></li>
-                                <li><a href="index-4.html"><img src="demo/pic4.jpg')}}" alt=""><span>Home - Factory</span></a></li>
-                                <li><a href="index-5.html"><img src="demo/pic5.jpg')}}" alt=""><span>Home - Construct</span></a></li>
-                                <li><a href="index-6.html"><img src="demo/pic6.jpg')}}" alt=""><span>Home - Solar Plant</span></a></li>
-                                <li><a href="index-7.html"><img src="demo/pic7.jpg')}}" alt=""><span>Home - Food Industry</span></a></li>
-                                <li><a href="index-8.html"><img src="demo/pic8.jpg')}}" alt=""><span>Home - Agriculture</span></a></li>
-                                <li><a href="index-9.html"><img src="demo/pic9.jpg')}}" alt=""><span>Home - Ship Industry</span></a></li>
-                                <li><a href="index-10.html"><img src="demo/pic10.jpg')}}" alt=""><span>Home - Leather Industry</span></a></li>
-                                <li><a href="index-11.html"><img src="demo/pic11.jpg')}}" alt=""><span>Home - Nuclear Plant</span></a></li>
-                                <li><a href="index-12.html"><img src="demo/pic12.jpg')}}" alt=""><span>Home - Beer Factory</span></a></li>
-                                <li><a href="index-13.html"><img src="demo/pic13.jpg')}}" alt=""><span>Home - Mining Industry</span></a></li>
-                                <li><a href="index-14.html"><img src="demo/pic14.jpg')}}" alt=""><span>Home - Car Industry</span></a></li>
-                                <li><a href="index-15.html"><img src="demo/pic15.jpg')}}" alt=""><span>Home - Plastic Industry</span></a></li>
+                                <li><a href="{{url('/')}}"><img src="demo/pic1.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Default</span></a></li>
+                                <li><a href="index-2.html"><img src="demo/pic2.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Oil/Gas Plant</span></a></li>
+                                <li><a href="index-3.html"><img src="demo/pic3.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Steel Plant</span></a></li>
+                                <li><a href="index-4.html"><img src="demo/pic4.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Factory</span></a></li>
+                                <li><a href="index-5.html"><img src="demo/pic5.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Construct</span></a></li>
+                                <li><a href="index-6.html"><img src="demo/pic6.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Solar Plant</span></a></li>
+                                <li><a href="index-7.html"><img src="demo/pic7.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Food Industry</span></a></li>
+                                <li><a href="index-8.html"><img src="demo/pic8.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Agriculture</span></a></li>
+                                <li><a href="index-9.html"><img src="demo/pic9.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Ship Industry</span></a></li>
+                                <li><a href="index-10.html"><img src="demo/pic10.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Leather Industry</span></a></li>
+                                <li><a href="index-11.html"><img src="demo/pic11.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Nuclear Plant</span></a></li>
+                                <li><a href="index-12.html"><img src="demo/pic12.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Beer Factory</span></a></li>
+                                <li><a href="index-13.html"><img src="demo/pic13.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Mining Industry</span></a></li>
+                                <li><a href="index-14.html"><img src="demo/pic14.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Car Industry</span></a></li>
+                                <li><a href="index-15.html"><img src="demo/pic15.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Plastic Industry</span></a></li>
                             </ul>
                         </li> --}}
 
@@ -162,17 +162,17 @@
             <div class="container">
                 <div class="ft-contact wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
 					<div class="ft-contact-bx">
-						<img src="{{asset('theme/images/icon/icon1.png')}}" alt=""/>
+						<img src="{{asset('theme/images/icon/icon1.png')}}" alt="{{$Settings->sitename}}"/>
 						<h4 class="title">Address</h4>
 						<p>Demo Address #8901 Marmora Road Chi Minh City, Somalia</p>
 					</div>
 					<div class="ft-contact-bx">
-						<img src="{{asset('theme/images/icon/icon2.png')}}" alt=""/>
+						<img src="{{asset('theme/images/icon/icon2.png')}}" alt="{{$Settings->sitename}}"/>
 						<h4 class="title">Phone</h4>
 						<p>+254723014032 <br> +254723014032</p>
 					</div>
 					<div class="ft-contact-bx">
-						<img src="{{asset('theme/images/icon/icon3.png')}}" alt=""/>
+						<img src="{{asset('theme/images/icon/icon3.png')}}" alt="{{$Settings->sitename}}"/>
 						<h4 class="title">Email Contact</h4>
 						<p>info@apexeng.com<br>info@apexeng.com</p>
 					</div>
@@ -242,7 +242,7 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="widget widget_about">
 							<div class="footer-logo logo-dark">
-								<a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt=""/></a>
+								<a href="{{url('/')}}"><img src="{{asset('theme/images/logo-2.png')}}" alt="{{$Settings->sitename}}"/></a>
 							</div>
 							<p>Apex Engineering Limited</p>
 							<div class="widget widget_getintuch">
@@ -309,7 +309,7 @@
 								@foreach($Blogs as $blog)
 								<div class="widget-post clearfix">
 									<div class="dlab-post-media"> 
-										<img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" width="200" height="143" alt=""> 
+										<img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" width="200" height="143" alt="{{$Settings->sitename}}"> 
 									</div>
 									<div class="dlab-post-info">
 										<div class="dlab-post-meta">
