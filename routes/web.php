@@ -15,23 +15,23 @@ use App\Http\Controllers\AdminsController;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about_us'])->name('about-us');
-Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact_us'])->name('contact-us');
-Route::get('/the-company', [App\Http\Controllers\HomeController::class, 'company'])->name('company');
-Route::get('/services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
-Route::get('/services/{slung}', [App\Http\Controllers\HomeController::class, 'services_single'])->name('services-single');
-Route::get('/portfolios', [App\Http\Controllers\HomeController::class, 'portfolios'])->name('portfolios');
-Route::get('/portfolios/{single}', [App\Http\Controllers\HomeController::class, 'portfolios_single'])->name('portfolios-single');
-Route::get('/latest-news', [App\Http\Controllers\HomeController::class, 'latest_news'])->name('latest-news');
-Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
-Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy_policy'])->name('privacy-policy');
-Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
-Route::post('/news-letters', [App\Http\Controllers\HomeController::class, 'news_letters'])->name('news-letters');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/about-us', [HomeController::class, 'about_us'])->name('about-us');
+Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact-us');
+Route::get('/the-company', [HomeController::class, 'company'])->name('company');
+Route::get('/services', [HomeController::class, 'services'])->name('services');
+Route::get('/services/{slung}', [HomeController::class, 'services_single'])->name('services-single');
+Route::get('/portfolios', [HomeController::class, 'portfolios'])->name('portfolios');
+Route::get('/portfolios/{single}', [HomeController::class, 'portfolios_single'])->name('portfolios-single');
+Route::get('/latest-news', [HomeController::class, 'latest_news'])->name('latest-news');
+Route::get('/terms-and-conditions', [HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
+Route::get('/privacy-policy', [HomeController::class, 'privacy_policy'])->name('privacy-policy');
+Route::get('/copyright', [HomeController::class, 'copyright'])->name('copyright');
+Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('admin/home', [AdminsController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
