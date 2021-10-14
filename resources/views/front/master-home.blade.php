@@ -46,6 +46,7 @@
 	<!--End of Tawk.to Script-->
 	{{--  --}}
 </head>
+<h1 style="display:none">{{$page_title}}</h1>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-area"></div>

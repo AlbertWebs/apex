@@ -50,6 +50,7 @@
 	{{--  --}}
 </head>
 <body id="bg">
+<h1 style="display:none">{{$page_title}}</h1>
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
