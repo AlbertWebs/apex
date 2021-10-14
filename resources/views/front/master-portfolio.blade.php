@@ -7,9 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="" />
+	<meta name="keywords" content="Apex Engineering, URBAN PLANNING GEOSPATIAL SERVICES ARCHITECTURAL ENVIRONMENTAL MANAGEMENT INFRASTRUCTURE MANAGEMENT LAND SURVEYING BRIDGE DESIGNING
+	& REHABILITATION" />
 	<meta name="author" content="Designekta Studios" />
-	<meta name="robots" content="" />
+	
 	<meta name="format-detection" content="telephone=no">
     <!--Meta SEO-->
 	{!! SEO::generate() !!}
