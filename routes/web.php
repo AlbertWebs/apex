@@ -15,7 +15,7 @@ use App\Http\Controllers\AdminsController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('homepage');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about-us');
 Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact-us');
 Route::get('/the-company', [HomeController::class, 'company'])->name('company');
