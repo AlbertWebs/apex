@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 m-b30 our-story-thum wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <img src="{{url('/')}}/uploads/about/pic13.jpg" class="radius-sm" alt="">
+                        <img src="{{url('/')}}/uploads/about/pic13.jpg" class="radius-sm" alt="Apex Engineering Limited">
                     </div>
                 </div>
             </div>

@@ -7,22 +7,22 @@
                 <div class="project-carousel-2 owl-carousel owl-btn-center-lr owl-btn-1 black  wow fadeInLeft" data-wow-delay="0.2s"  data-wow-duration="2s">
                     <div class="item">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
-                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt="">
+                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt="{{$item->title}}">
                         </div>
                     </div>
                     <div class="item">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
-                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_two}}" alt="">
+                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_two}}" alt="{{$item->title}}">
                         </div>
                     </div>
                     <div class="item">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
-                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_three}}" alt="">
+                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_three}}" alt="{{$item->title}}">
                         </div>
                     </div>
                     <div class="item">
                         <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom">
-                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_four}}" alt="">
+                            <img src="{{url('/')}}/uploads/casestudies/{{$item->image_four}}" alt="{{$item->title}}">
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@
             <div class="col-xs-6 col-lg-2 col-md-6 col-sm-6  p-b20">
                 <div class="ow-client-logo">
                     <div class="client-logo border">
-                        <a href="javascript:void(0);"><img src="{{url('/')}}/uploads/clients/{{$item->image}}" alt=""></a>
+                        <a href="javascript:void(0);"><img src="{{url('/')}}/uploads/clients/{{$item->image}}" alt="Apex Engineering Limited"></a>
                     </div>
                 </div>
             </div>

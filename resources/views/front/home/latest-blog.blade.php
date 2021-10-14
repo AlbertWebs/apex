@@ -1,4 +1,4 @@
-<div class="section-full content-inner bg-white">
+{{-- <div class="section-full content-inner bg-white">
     <div class="container">
         <div class="section-head text-black text-center">
             <h2 class="title text-capitalize">latest news</h2>
@@ -85,4 +85,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
