@@ -13,8 +13,8 @@ class HomeController extends Controller
 
         SEOTools::setTitle('Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/');
-        SEOTools::setCanonical('http://apexengltd.com/');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/');
+        SEOTools::setCanonical('https://www.apexengltd.com/');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -25,8 +25,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Contact Us | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/contact-us');
-        SEOTools::setCanonical('http://apexengltd.com/contact-us');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/contact-us');
+        SEOTools::setCanonical('https://www.apexengltd.com/contact-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -38,8 +38,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('About Us | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/about-us');
-        SEOTools::setCanonical('http://apexengltd.com/about-us');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/about-us');
+        SEOTools::setCanonical('https://www.apexengltd.com/about-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -52,8 +52,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('The Company | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/the-company');
-        SEOTools::setCanonical('http://apexengltd.com/the-company');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/the-company');
+        SEOTools::setCanonical('https://www.apexengltd.com/the-company');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -65,8 +65,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Our Services | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering Limited Services');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/services');
-        SEOTools::setCanonical('http://apexengltd.com/services');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/services');
+        SEOTools::setCanonical('https://www.apexengltd.com/services');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -81,8 +81,8 @@ class HomeController extends Controller
             $title = html_entity_decode($Cat->title, ENT_QUOTES, 'UTF-8');
             SEOTools::setTitle(''.$title.' | Apex Engineering Limited | Best Engineering Firm In Somalia');
             SEOTools::setDescription(''.$Cat->meta.'');
-            SEOTools::opengraph()->setUrl('http://apexengltd.com/services/'.$slung.'');
-            SEOTools::setCanonical('http://apexengltd.com/'.$slung.'');
+            SEOTools::opengraph()->setUrl('https://www.apexengltd.com/services/'.$slung.'');
+            SEOTools::setCanonical('https://www.apexengltd.com/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
             SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -99,8 +99,8 @@ class HomeController extends Controller
        
             SEOTools::setTitle('Our Portfolio | Apex Engineering Limited | Best Engineering Firm In Somalia');
             SEOTools::setDescription('Our Projects');
-            SEOTools::opengraph()->setUrl('http://apexengltd.com/portfolio');
-            SEOTools::setCanonical('http://apexengltd.com/portfolio');
+            SEOTools::opengraph()->setUrl('https://www.apexengltd.com/portfolio');
+            SEOTools::setCanonical('https://www.apexengltd.com/portfolio');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
             SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -115,8 +115,8 @@ class HomeController extends Controller
             $title = html_entity_decode($Cat->title, ENT_QUOTES, 'UTF-8');
             SEOTools::setTitle(''.$title.' | Apex Engineering Limited | Best Engineering Firm In Somalia');
             SEOTools::setDescription(''.$Cat->meta.'');
-            SEOTools::opengraph()->setUrl('http://apexengltd.com/services/'.$slung.'');
-            SEOTools::setCanonical('http://apexengltd.com/'.$slung.'');
+            SEOTools::opengraph()->setUrl('https://www.apexengltd.com/services/'.$slung.'');
+            SEOTools::setCanonical('https://www.apexengltd.com/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
             SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -130,8 +130,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Latest News | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/latest-news');
-        SEOTools::setCanonical('http://apexengltd.com/latest-news');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/latest-news');
+        SEOTools::setCanonical('https://www.apexengltd.com/latest-news');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -145,8 +145,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Terms and Conditions | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/terms-and-conditions');
-        SEOTools::setCanonical('http://apexengltd.com/terms-and-conditions');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/terms-and-conditions');
+        SEOTools::setCanonical('https://www.apexengltd.com/terms-and-conditions');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -158,8 +158,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Privacy Policy | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/privacy-policy');
-        SEOTools::setCanonical('http://apexengltd.com/privacy-policy');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/privacy-policy');
+        SEOTools::setCanonical('https://www.apexengltd.com/privacy-policy');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
@@ -171,8 +171,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Copyright | Apex Engineering Limited | Best Engineering Firm In Somalia');
         SEOTools::setDescription('Apex Engineering is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
-        SEOTools::opengraph()->setUrl('http://apexengltd.com/copyright');
-        SEOTools::setCanonical('http://apexengltd.com/copyright');
+        SEOTools::opengraph()->setUrl('https://www.apexengltd.com/copyright');
+        SEOTools::setCanonical('https://www.apexengltd.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
         SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
