@@ -102,25 +102,7 @@
                             <a href="{{url('/')}}/portfolios">Our Projects</a>
                             
                         </li>
-                        {{-- <li class="active has-mega-menu homedemo"> <a href="javascript:;">Projects<i class="fa fa-chevron-down"></i></a>
-                            <ul class="mega-menu">
-                                <li><a href="{{url('/')}}"><img src="demo/pic1.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Default</span></a></li>
-                                <li><a href="index-2.html"><img src="demo/pic2.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Oil/Gas Plant</span></a></li>
-                                <li><a href="index-3.html"><img src="demo/pic3.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Steel Plant</span></a></li>
-                                <li><a href="index-4.html"><img src="demo/pic4.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Factory</span></a></li>
-                                <li><a href="index-5.html"><img src="demo/pic5.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Construct</span></a></li>
-                                <li><a href="index-6.html"><img src="demo/pic6.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Solar Plant</span></a></li>
-                                <li><a href="index-7.html"><img src="demo/pic7.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Food Industry</span></a></li>
-                                <li><a href="index-8.html"><img src="demo/pic8.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Agriculture</span></a></li>
-                                <li><a href="index-9.html"><img src="demo/pic9.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Ship Industry</span></a></li>
-                                <li><a href="index-10.html"><img src="demo/pic10.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Leather Industry</span></a></li>
-                                <li><a href="index-11.html"><img src="demo/pic11.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Nuclear Plant</span></a></li>
-                                <li><a href="index-12.html"><img src="demo/pic12.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Beer Factory</span></a></li>
-                                <li><a href="index-13.html"><img src="demo/pic13.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Mining Industry</span></a></li>
-                                <li><a href="index-14.html"><img src="demo/pic14.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Car Industry</span></a></li>
-                                <li><a href="index-15.html"><img src="demo/pic15.jpg')}}" alt="{{$Settings->sitename}}"><span>Home - Plastic Industry</span></a></li>
-                            </ul>
-                        </li> --}}
+                        
 
                         <li>
                             <a href="{{url('/')}}/services">Services </a>
