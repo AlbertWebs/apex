@@ -50,7 +50,7 @@
 <h1 style="display:none">{{$page_title}}</h1>
 <body id="bg">
 <div class="page-wraper">
-<div id="loading-area"></div>
+{{-- <div id="loading-area"></div> --}}
    <!-- header -->
    <header class="site-header mo-left header-transparent header navstyle3">
     <!-- main header -->
