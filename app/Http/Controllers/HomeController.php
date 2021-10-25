@@ -17,7 +17,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $page_title = "Apex Engineering Limited";
         return view('front.index',compact('page_title'));
     }
@@ -29,7 +29,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/contact-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Content = DB::table('_site_settings')->get();
         $page_title = "Contact Apex Engineering Limited";
         return view('front.contact-us',compact('Content','page_title'));
@@ -42,7 +42,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/about-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Content = DB::table('abouts')->get();
         $page_title = "About Apex Engineering Limited";
         return view('front.about',compact('Content','page_title'));
@@ -56,7 +56,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/the-company');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Content = DB::table('abouts')->get();
         $page_title = "The Company Apex Engineering Limited";
         return view('front.company',compact('Content','page_title'));
@@ -69,7 +69,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/services');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Content = DB::table('categories')->get();
         $page_title = "Apex Engineering Limited Services";
         return view('front.services',compact('Content','page_title'));
@@ -85,7 +85,7 @@ class HomeController extends Controller
             SEOTools::setCanonical('https://www.apexengltd.com/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
-            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
             $Content = DB::table('categories')->get();
             $page_title = $title;
             
@@ -103,7 +103,7 @@ class HomeController extends Controller
             SEOTools::setCanonical('https://www.apexengltd.com/portfolio');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
-            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
             $page_title = "Our Portfolio Apex Engineering Limited";
             return view('front.portfolios',compact('Cases','page_title'));
         
@@ -119,7 +119,7 @@ class HomeController extends Controller
             SEOTools::setCanonical('https://www.apexengltd.com/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@apexengineering');
-            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+            SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
             $Content = DB::table('categories')->get();
             $page_title = $title;
             return view('front.portfolio',compact('Portfolio','page_title'));
@@ -134,7 +134,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/latest-news');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Blogs = DB::table('blogs')->paginate(12);
         $page_title = "Apex Engineering Limited News";
         return view('front.latest-news',compact('Blogs','page_title'));
@@ -149,7 +149,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/terms-and-conditions');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Copyright = DB::table('terms')->get();
         $page_title = "Apex Engineering Limited";
         return view('front.terms-and-conditions',compact('Copyright','page_title'));
@@ -162,7 +162,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/privacy-policy');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Copyright = DB::table('privacies')->get();
         $page_title = "Apex Engineering Limited";
         return view('front.privacy-policy',compact('Copyright','page_title'));
@@ -175,7 +175,7 @@ class HomeController extends Controller
         SEOTools::setCanonical('https://www.apexengltd.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@apexengineering');
-        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/wp-content/uploads/2017/10/Apex.png');
+        SEOTools::jsonLd()->addImage('https://www.apexengltd.com/theme/images/logo-2.png');
         $Copyright = DB::table('copyright')->get();
         $page_title = "Apex Engineering Limited";
         return view('front.copyright',compact('Copyright','page_title'));
