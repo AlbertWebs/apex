@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function contact_us()
     {
         SEOTools::setTitle('Contact Us | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('Contact Apex Engineering | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/contact-us');
         SEOTools::setCanonical('https://www.apexengltd.com/contact-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -37,7 +37,7 @@ class HomeController extends Controller
     public function about_us()
     {
         SEOTools::setTitle('About Us | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('About Apex Engineering Ltd | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/about-us');
         SEOTools::setCanonical('https://www.apexengltd.com/about-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -51,7 +51,7 @@ class HomeController extends Controller
     public function company()
     {
         SEOTools::setTitle('The Company | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('The Company Apex Engineering Ltd | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/the-company');
         SEOTools::setCanonical('https://www.apexengltd.com/the-company');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -98,7 +98,7 @@ class HomeController extends Controller
      
        
             SEOTools::setTitle('Our Portfolio | Apex Engineering Limited | Best Engineering Firm In Somalia');
-            SEOTools::setDescription('Our Projects');
+            SEOTools::setDescription('Apex Engineering Ltd Projects');
             SEOTools::opengraph()->setUrl('https://www.apexengltd.com/portfolio');
             SEOTools::setCanonical('https://www.apexengltd.com/portfolio');
             SEOTools::opengraph()->addProperty('type', 'articles');
@@ -129,7 +129,7 @@ class HomeController extends Controller
     public function latest_news()
     {
         SEOTools::setTitle('Latest News | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('Latest News | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/latest-news');
         SEOTools::setCanonical('https://www.apexengltd.com/latest-news');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -144,7 +144,7 @@ class HomeController extends Controller
     public function terms_and_conditions()
     {
         SEOTools::setTitle('Terms and Conditions | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('Apex Engineering Terms and Condition | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/terms-and-conditions');
         SEOTools::setCanonical('https://www.apexengltd.com/terms-and-conditions');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -157,7 +157,7 @@ class HomeController extends Controller
     public function privacy_policy()
     {
         SEOTools::setTitle('Privacy Policy | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('Apex Engineering Ltd Privacy Policy | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/privacy-policy');
         SEOTools::setCanonical('https://www.apexengltd.com/privacy-policy');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -170,7 +170,7 @@ class HomeController extends Controller
     public function copyright()
     {
         SEOTools::setTitle('Copyright | Apex Engineering Limited | Best Engineering Firm In Somalia');
-        SEOTools::setDescription('Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
+        SEOTools::setDescription('Copyright Statement | Apex Engineering Ltd is an independent firm of designers, architects, planners, engineers, environmental specialists offering professional services. ');
         SEOTools::opengraph()->setUrl('https://www.apexengltd.com/copyright');
         SEOTools::setCanonical('https://www.apexengltd.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
@@ -184,14 +184,9 @@ class HomeController extends Controller
 
     public function news_letters(Request $request)
     {   
-       
-          
             if ( ! Newsletter::isSubscribed($request->user_email) ) {
                 Newsletter::subscribe($request->user_email);
             }
-     
-
-       
     }
 
 
