@@ -404,6 +404,7 @@
 	Industry.handleMasonryFilter();
 </script>
 @include('front.newsletter')
+@include('schema')
 </body>
 @endforeach
 </html>
