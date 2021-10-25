@@ -83,7 +83,7 @@
 								{{-- Showreel --}}
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media dlab-img-overlay1 dlab-img-effect ">
-										<a href="portfolio-details.html"> <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt=""> </a>
+										<a href="#"> <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt=""> </a>
 										<div class="overlay-bx">
 											<div class="overlay-icon">
 												<div class="text-white">
