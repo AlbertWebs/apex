@@ -359,6 +359,7 @@
 
 
 @include('front.newsletter')
+@include('schema')
 </body>
 @endforeach
 </html>
