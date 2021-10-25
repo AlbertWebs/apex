@@ -1,7 +1,7 @@
 <script type='application/ld+json'>
     {
       "@context": "http://www.schema.org",
-      "@type": "WebPage",
+      "@type": "ProfessionalService",
       "name": "Apex Engineering Ltd",
       "url": "http://apexengltd.com/",
       "logo": "https://www.apexengltd.com/theme/images/logo-2.png",
