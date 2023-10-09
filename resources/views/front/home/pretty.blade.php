@@ -16,7 +16,7 @@
                             </div>
                             <div class="icon-content">
                                 <div class="dlab-separator bg-primary"></div>
-                                <h2 class="dlab-tilte counter">126</h2>
+                                <h2 class="dlab-tilte counter">40</h2>
                                 <p>Active Experts</p>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                             </div>
                             <div class="icon-content">
                                 <div class="dlab-separator bg-primary"></div>
-                                <h2 class="dlab-tilte counter">552</h2>
+                                <h2 class="dlab-tilte counter">50</h2>
                                 <p>Equipments</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="icon-content">
                                 <div class="dlab-separator bg-primary"></div>
-                                <h2 class="dlab-tilte counter">35</h2>
+                                <h2 class="dlab-tilte counter">120</h2>
                                 <p>Completed Projects</p>
                             </div>
                         </div>

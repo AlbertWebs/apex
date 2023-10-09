@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
 use App\Http\Controllers\AdminsController;
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +22,13 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/services/{slung}', [HomeController::class, 'services_single'])->name('services-single');
 Route::get('/portfolios', [HomeController::class, 'portfolios'])->name('portfolios');
 Route::get('/portfolios/{single}', [HomeController::class, 'portfolios_single'])->name('portfolios-single');
-Route::get('/latest-news', [HomeController::class, 'latest_news'])->name('latest-news');
+
 Route::get('/terms-and-conditions', [HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/privacy-policy', [HomeController::class, 'privacy_policy'])->name('privacy-policy');
 Route::get('/copyright', [HomeController::class, 'copyright'])->name('copyright');
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
+Route::get('/latest-news', [HomeController::class, 'latest_news'])->name('latest-news');
+Route::get('/latest-news/{slung}', [HomeController::class, 'latest_new'])->name('latest-new-news');
 
 Auth::routes();
 

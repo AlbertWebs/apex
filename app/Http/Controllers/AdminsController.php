@@ -2183,7 +2183,7 @@ public function add_CaseStudy(Request $request){
     
 
   
-    $slung = str_slug($request->name);
+    $slung = $request->name;
     $Portfolio = new Cases;
     $Portfolio->title = $request->name;
     $Portfolio->slung = Str::slug($request->name);
