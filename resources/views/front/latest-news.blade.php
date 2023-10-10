@@ -28,7 +28,7 @@
                         <div class="post card-container col-lg-4 col-md-6 col-sm-12">
                             <div class="blog-post blog-grid blog-rounded blog-effect1">
                                 <div class="dlab-post-media">
-                                    <img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" width="200" height="143" alt="">
+                                    <img src="{{url('/')}}/uploads/blogs/{!! str_replace(':', '_', $blog->image_one) !!}" width="200" height="143" alt="">
                                 </div>
                                 <div class="dlab-post-info  p-a20 border-1">
                                     <div class="dlab-post-meta">

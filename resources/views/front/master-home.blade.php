@@ -291,7 +291,7 @@
 								@foreach($Blogs as $blog)
 								<div class="widget-post clearfix">
 									<div class="dlab-post-media">
-										<img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" width="200" height="143" alt="{{$Settings->sitename}}">
+										<img src="{{url('/')}}/uploads/blogs/{!! str_replace(':', '_', $blog->image_one) !!}" width="200" height="143" alt="{{$Settings->sitename}}">
 									</div>
 									<div class="dlab-post-info">
 										<div class="dlab-post-meta">

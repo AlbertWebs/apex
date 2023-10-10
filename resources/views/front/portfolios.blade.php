@@ -19,7 +19,7 @@
                 </div>
             </div>
             <!-- inner page banner END -->
-            
+
             <div class="content-block">
                 <!-- Services Info Head -->
                 <div class="section-full content-inner-2 bg-white">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <!-- Services Info Head END -->
-           
+
                 {{--  --}}
                 <div class="content-block">
                     <div class="section-full bg-gray content-inner-2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
@@ -40,7 +40,7 @@
                             <div class="section-head style2 text-center">
                                 <h2 class="title m-b10">Our Projects</h2>
                                 <p>At Apex Engineering LTD we commit the same attention and expertise to every project in our office. We have engineered a diverse range of projects including large master planned and mixed use communities, single and multi-family residential developments, commercial and retail shopping centers, office parks, industrial areas, schools, institutional centers, and government offices.
-                    
+
                                 </p>
                             </div>
                             <div class="row">
@@ -63,11 +63,11 @@
                             <div class="row p-l0 sp10">
                                 <div class="col-lg-12">
                                     <ul id="masonry" class="dlab-gallery-listing gallery mfp-gallery text-center">
-                                       
+
                                         @foreach ($Cases as $cases)
                                         <li class="card-container col-lg-4 col-md-6 col-sm-6 {{$cases->service}}">
                                             <div class="dlab-media dlab-img-overlay1 dlab-img-effect portbox3">
-                                                <img style="min-height:253px !important;" src="{{url('/')}}/uploads/casestudies/{{$cases->image_one}}" alt=""/>
+                                                <img style="min-height:253px !important;" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $cases->image_one) !!}" alt=""/>
                                                 <div class="overlay-bx">
                                                     <div class="portinner">
                                                         <div class="port-up">
@@ -98,7 +98,7 @@
                 {{-- Other Projects --}}
                 <div class="bg-white">
                     <!-- Left & right section start -->
-                
+
                     <div class="section-full bg-white content-inner bg-white" >
                         <div class="container">
                             <div class="row">
@@ -294,8 +294,8 @@
                                                         <h4> URBAN PLANNING & ENVIRONMENTAL  PROJECTS UNDERTAKEN</h4>
                                                     </div>
                                                     <table  class="table check-tbl list-star reverse list-box ">
-                                                      
-                                                
+
+
                                                         <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
                                                             <td width="246">
                                                                 Name
@@ -531,7 +531,7 @@
                                                                 Municipalities in consultation and in coordination with relevant
                                                                 government agencies and donor organizations.</p>
                                                                 <p class="western">Developed
-                                                                Solid Waste Management Plan, Biomedical Waste Management Plans. 
+                                                                Solid Waste Management Plan, Biomedical Waste Management Plans.
                                                                 </p>
                                                             </td>
                                                             <td width="260" style="background: transparent" style="border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding: 0in"><p class="western" align="center">
@@ -548,8 +548,8 @@
                                                     </div>
                                                     {{--  --}}
                                                     <table  class="table check-tbl list-star reverse list-box ">
-                                                      
-                                                
+
+
                                                         <tr class="wow flipInY fly-box-ho" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInY;">
                                                             <td width="476" height="3" style="background: transparent" style="border-top: 1px solid #000000; border-bottom: none; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in"><p class="western" align="center">
                                                                <b>Name
@@ -626,7 +626,7 @@
                                                                 District
                                                                 Stabilization Needs Assessment and the Facilitation of Consensus
                                                                 Building workshop to Prioritize USAID funded projects in
-                                                                Garbahareey District, Gedo Region. 
+                                                                Garbahareey District, Gedo Region.
                                                                 </p>
                                                             </td>
                                                             <td width="260" style="background: transparent" style="border: none; padding: 0in"><p class="western" align="center">
@@ -678,7 +678,7 @@
                         </div>
                         <!-- Listing With Numbering & Alfha END -->
                     </div>
-                   
+
                     <!-- Left & right section  END -->
                 </div>
                 {{--  --}}

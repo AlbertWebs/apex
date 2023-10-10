@@ -3,18 +3,18 @@
   <!-- Content -->
   <div class="page-content bg-white">
     <!-- Slider -->
-    @include('front.home.slider')     
+    @include('front.home.slider')
 
     {{-- Welcome Section --}}
     @include('front.home.welcome')
-    
+
     {{-- Mision vision & Values --}}
     @include('front.home.vision-mission-values')
 
     {{--  --}}
     @include('front.home.services')
 
-    {{-- Latest News --}}
+    {{-- Latest Portfolio --}}
     @include('front.home.latest')
 
     {{-- Pretty Counter --}}
@@ -22,13 +22,13 @@
 
     {{-- Testimonials --}}
     {{-- @include('front.home.testimonials') --}}
-   
+
     {{-- Call To Action --}}
     @include('front.home.call-to-action-one')
 
     {{-- Projects Summary --}}
     @include('front.home.summary')
-   
+
     {{-- Milestones --}}
     @include('front.home.milestones')
 
@@ -40,7 +40,7 @@
 
 	<!-- Clients -->
     {{-- @include('front.home.clients') --}}
-  
+
 </div>
 <!-- Content END -->
 

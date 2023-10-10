@@ -25,11 +25,11 @@
                 <h4 class="post-title m-t0"><a href="#">{{$blog->title}}</a></h4>
             </div>
             <div class="dlab-post-media dlab-img-effect zoom-slow">
-                <a href="#"><img src="{{url('/')}}/uploads/blogs/{{$blog->image_one}}" alt=""></a>
+                <a href="#"><img src="{{url('/')}}/uploads/blogs/{!! str_replace(':', '_', $blog->image_one) !!}" alt=""></a>
             </div>
             <div class="dlab-post-text">
                 <p>{!! html_entity_decode($blog->content, ENT_QUOTES, 'UTF-8') !!}</p>
-                <blockquote>{!! html_entity_decode($blog->meta, ENT_QUOTES, 'UTF-8') !!}</blockquote>
+                {{-- <blockquote>{!! html_entity_decode($blog->meta, ENT_QUOTES, 'UTF-8') !!}</blockquote> --}}
             </div>
         </div>
         <!-- blog END -->

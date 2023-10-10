@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\MpesaController;
+use App\Http\Controllers\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,9 +30,11 @@ Route::get('/portfolios/{single}', [HomeController::class, 'portfolios_single'])
 Route::get('/terms-and-conditions', [HomeController::class, 'terms_and_conditions'])->name('terms-and-conditions');
 Route::get('/privacy-policy', [HomeController::class, 'privacy_policy'])->name('privacy-policy');
 Route::get('/copyright', [HomeController::class, 'copyright'])->name('copyright');
+
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
+
 Route::get('/latest-news', [HomeController::class, 'latest_news'])->name('latest-news');
-Route::get('/latest-news/{slung}', [HomeController::class, 'latest_new'])->name('latest-new-news');
+Route::get('/latest-news/{slung}', [HomeController::class, 'latest_new'])->name('the-latest-new-news');
 
 Auth::routes();
 

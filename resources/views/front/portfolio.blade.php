@@ -4,7 +4,7 @@
 	  <!-- Content -->
 	  <div class="page-content bg-white">
 		<!-- inner page banner -->
-		<div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url({{url('/')}}/uploads/casestudies/{{$item->image_one}});">
+		<div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url({{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_one) !!});">
 			<div class="container">
 				<div class="dlab-bnr-inr-entry">
 
@@ -76,14 +76,14 @@
 
 								@else
 								<div class="col-lg-12 m-b30">
-									<img alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}">
+									<img alt="" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_one) !!}">
 								</div>
 								@endif
 							@else
 								{{-- Showreel --}}
 								<div class="dlab-box dlab-gallery-box">
 									<div class="dlab-media dlab-img-overlay1 dlab-img-effect ">
-										<a href="#"> <img src="{{url('/')}}/uploads/casestudies/{{$item->image_one}}" alt=""> </a>
+										<a href="#"> <img src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_one) !!}" alt=""> </a>
 										<div class="overlay-bx">
 											<div class="overlay-icon">
 												<div class="text-white">
@@ -103,14 +103,14 @@
 
 							@else
 							<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_two}}">
+								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_two) !!}">
 							</div>
 							@endif
 							@if($item->image_three == null or $item->image_three == 0)
 
 							@else
 							<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_three}}">
+								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_three) !!}">
 							</div>
 							@endif
 
@@ -119,7 +119,7 @@
 
 							@else
 							<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_four}}">
+								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_four) !!}">
 							</div>
 							@endif
 
@@ -127,7 +127,7 @@
 
 							@else
 							<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
-								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{{$item->image_five}}">
+								<img style="min-height:192px !important" alt="" src="{{url('/')}}/uploads/casestudies/{!! str_replace(':', '_', $item->image_five) !!}">
 							</div>
 							@endif
 							{{--  --}}
@@ -172,10 +172,10 @@
 							@foreach($Galleries as $Gallery)
 							<li class="card-container m-b10 col-lg-4 portfolio_{{$Gallery->portfolio_id}}">
 								<div class="dlab-media dlab-img-overlay1 dlab-img-effect">
-									<img src="{{url('/')}}/uploads/gallery/{{$Gallery->image}}"  alt="" width="800" height="650"/>
+									<img src="{{url('/')}}/uploads/gallery/{!! str_replace(':', '_', $Gallery->image) !!}"  alt="" width="800" height="650"/>
 									<div class="overlay-bx">
 										<div class="overlay-icon">
-											<span data-exthumbimage="{{url('/')}}/uploads/gallery/{{$Gallery->image}}" data-src="{{url('/')}}/uploads/gallery/{{$Gallery->image}}" class="check-km" title="Apex Engineering Limited Somalia">
+											<span data-exthumbimage="{{url('/')}}/uploads/gallery/{!! str_replace(':', '_', $Gallery->image) !!}" data-src="{{url('/')}}/uploads/gallery/{!! str_replace(':', '_', $Gallery->image) !!}" class="check-km" title="Apex Engineering Limited Somalia">
 												<i class="ti-zoom-in icon-bx-xs"></i>
 											</span>
 										</div>
